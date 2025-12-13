@@ -1,0 +1,280 @@
+<div class="landing-container">
+    <!-- Navbar -->
+    <header class="landing-header">
+        <div class="header-container">
+            <div class="logo">AIToFlower 🥦</div>
+
+            <button mat-icon-button class="mobile-menu-toggle" (click)="toggleMobileMenu()">
+                <mat-icon>{{ isMobileMenuOpen ? 'close' : 'menu' }}</mat-icon>
+            </button>
+
+            <nav class="main-nav" [class.open]="isMobileMenuOpen">
+                <a href="#hero" (click)="toggleMobileMenu()">Inicio</a>
+                <a href="#features" (click)="toggleMobileMenu()">El Team</a>
+                <a href="#how-it-works" (click)="toggleMobileMenu()">Cómo va</a>
+                <a href="#pricing" (click)="toggleMobileMenu()">Precios</a>
+                <a href="#b2b" (click)="toggleMobileMenu()">Empresas</a>
+                <button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Entrar</button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+        <div class="hero-content">
+            <h2 class="brand-uptitle">AIToFlower</h2>
+            <h1 class="hero-title">Cultiva autoflorecientes sin errores.</h1>
+            <p class="hero-subtitle">Asistente IA que te guía día a día con riegos, nutrientes y detección de problemas.
+            </p>
+
+            <div class="cta-group">
+                <button mat-flat-button color="primary" class="cta-primary">
+                    <mat-icon>rocket_launch</mat-icon>
+                    Empieza gratris
+                </button>
+                <button mat-stroked-button class="cta-secondary">
+                    <mat-icon>play_circle_outline</mat-icon>
+                    Ver cómo funciona
+                </button>
+            </div>
+        </div>
+
+        <div class="hero-mockup-stack">
+            <!-- Mockup Images Stacked -->
+            <img src="assets/images/mockup.png" class="mockup-img main" alt="App Main Screen">
+            <img src="assets/images/mockup.png" class="mockup-img floating-1" alt="App Feature 1">
+            <img src="assets/images/mockup.png" class="mockup-img floating-2" alt="App Feature 2">
+        </div>
+    </section>
+
+    <!-- 2. Problem / Solution -->
+    <section class="problem-solution-section">
+        <div class="problem-block">
+            <div class="card-super-icon red">
+                <mat-icon>warning</mat-icon>
+            </div>
+            <h2>¿Problemas en el cultivo?</h2>
+            <p>Las autos son exigentes y no perdonan una:</p>
+            <ul class="problem-list">
+                <li><mat-icon>close</mat-icon> <span>¿Se quedaron enanas?</span></li>
+                <li><mat-icon>close</mat-icon> <span>¿Hojas amarillas o quemadas?</span></li>
+                <li><mat-icon>close</mat-icon> <span>¿Cosecha ridícula?</span></li>
+            </ul>
+        </div>
+
+        <div class="solution-block">
+            <div class="card-super-icon green">
+                <mat-icon>check_circle</mat-icon>
+            </div>
+            <h2>Cultiva con seguridad</h2>
+            <p class="solution-lead">AIToFlower es tu guía.</p>
+            <p>Tu agrónomo de bolsillo que te dice <strong>exactamente qué hacer</strong> para sacar cogollos como puños
+                sin estrés.</p>
+
+            <button mat-flat-button color="primary" class="solution-cta">
+                <mat-icon>arrow_forward</mat-icon>
+                Empezar ahora
+            </button>
+        </div>
+    </section>
+
+    <!-- 3. Features -->
+    <section class="features-section" id="features">
+        <h2>Tu Team de Cultivo</h2>
+        <div class="features-grid">
+            <mat-card class="feature-card">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>eco</mat-icon> Niñera 24/7</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>Cuenta los días por ti</p>
+                    <p>Sabe en qué etapa está</p>
+                    <p>Te avisa si la vas a liar</p>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card class="feature-card">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>water_drop</mat-icon> Chef de Nutrientes</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>Ni una gota de más</p>
+                    <p>Tabla de dieta personalizada</p>
+                    <p>Adiós hojas quemadas</p>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card class="feature-card">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>add_a_photo</mat-icon> Detector de Marrones</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>Sube foto de lo raro</p>
+                    <p>Diagnóstico al instante</p>
+                    <p>Sin cuñadismos de foro</p>
+                </mat-card-content>
+            </mat-card>
+
+            <mat-card class="feature-card">
+                <mat-card-header>
+                    <mat-card-title><mat-icon>smart_toy</mat-icon> Cerebro Gordo</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <p>Se acuerda de todo</p>
+                    <p>Aprende de tu jardín</p>
+                    <p>Respuestas claras, no rollos</p>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </section>
+
+    <!-- 4. How it Works -->
+    <section class="how-it-works-section" id="how-it-works">
+        <h2>Cómo va la historia</h2>
+        <ol class="steps-list">
+            <li>
+                <span class="step-text">Creas tu cultivo en 1 min</span>
+                <button mat-button class="step-cta">Entrar</button>
+            </li>
+            <li>Registras riegos (o lo que surja)</li>
+            <li>Sigues los consejos del Jefe (la IA)</li>
+        </ol>
+        <p class="simple-note">Disfruta tu cosecha 🥦</p>
+    </section>
+
+    <!-- 5. Differentiators -->
+    <section class="differentiators-section">
+        <h2>¿Por qué AIToFlower?</h2>
+        <ul class="checklist">
+            <li><mat-icon>check</mat-icon> Solo Autos: Nada de relleno para fotodependientes</li>
+            <li><mat-icon>check</mat-icon> Cero "Bro Science": Datos, no mitos</li>
+            <li><mat-icon>check</mat-icon> Memoria de elefante: Lo guarda todo por ti</li>
+            <li><mat-icon>check</mat-icon> Tu agrónomo de bolsillo 24/7</li>
+        </ul>
+        <p class="disclaimer-small">Evita los errores de novato (y los de no tan novato).</p>
+    </section>
+
+    <!-- 6. Pricing -->
+    <!-- 6. Pricing -->
+    <section class="pricing-section" id="pricing">
+        <div class="pricing-header">
+            <h3 class="common-features-title">
+                <mat-icon class="highlight-icon">stars</mat-icon>
+                Todo incluido en cualquier plan:
+            </h3>
+            <div class="common-features-grid">
+                <div class="common-item"><mat-icon>calendar_today</mat-icon> Calendario</div>
+                <div class="common-item"><mat-icon>menu_book</mat-icon> Wiki</div>
+                <div class="common-item"><mat-icon>restaurant</mat-icon> Nutrición</div>
+                <div class="common-item"><mat-icon>cloud</mat-icon> Alertas Clima</div>
+                <!-- Chat IA removed from here -->
+            </div>
+        </div>
+
+        <!-- 1. Semilla (Free) -->
+        <div class="pricing-card">
+            <h3>Semilla</h3>
+            <div class="price-tag">GRATIS</div>
+            <ul>
+                <li>1 Cultivo Activo</li>
+                <li>1 Planta</li>
+                <li>1 Revisión por cultivo</li>
+                <li>Historial 2 cultivos</li>
+            </ul>
+            <button mat-flat-button color="primary">Empezar</button>
+        </div>
+
+        <!-- 2. Cogollo -->
+        <div class="pricing-card featured">
+            <h3>Cogollo</h3>
+            <div class="price-tag">4.20€ <small>/mes</small></div>
+            <ul>
+                <li>1 Cultivo Activo</li>
+                <li>10 Plantas</li>
+                <li>1 Revisión sem/cultivo</li>
+                <li>1 Diag. Imagen/sem</li>
+                <li>Historial 10 cultivos</li>
+            </ul>
+            <button mat-flat-button color="primary">Elegir</button>
+        </div>
+
+        <!-- 3. Cosecha -->
+        <div class="pricing-card">
+            <h3>Cosecha</h3>
+            <div class="price-tag">9.90€ <small>/mes</small></div>
+            <ul>
+                <li>5 Cultivos Activos</li>
+                <li>50 Plantas</li>
+                <li>1 Revisión día/cultivo</li>
+                <li>1 Diag. Imagen/día</li>
+                <li>Historial 100 cultivos</li>
+            </ul>
+            <button mat-flat-button color="primary">Elegir</button>
+        </div>
+
+        <!-- 4. Granja (Enterprise) -->
+        <div class="pricing-card">
+            <h3>Granja</h3>
+            <div class="price-tag">Consultar</div>
+            <ul>
+                <li>Cultivos Activos personalizados</li>
+                <li>Plantas personalizadas</li>
+                <li>Revisiones personalizadas</li>
+                <li>Diag. Imagen personalizados</li>
+                <li>Historial personalizado</li>
+            </ul>
+            <a mat-flat-button color="primary"
+                href="mailto:info@aitoflower.com?subject=Contacto para cuenta personalizada de AIToFlower">Contactar</a>
+        </div>
+    </section>
+
+    <!-- 7. B2B / Partners Section -->
+    <section class="b2b-section" id="b2b">
+        <div class="b2b-content">
+            <div class="b2b-text">
+                <span class="badge-b2b">PARA EMPRESAS</span>
+                <h2>¿Tienes una marca del sector?</h2>
+                <p>Conecta directamente con cultivadores que usan tus semillas, fertilizantes o luces en tiempo real.
+                </p>
+
+                <ul class="b2b-features">
+                    <li><mat-icon>verified</mat-icon> <strong>Perfil Oficial:</strong> Carga tu catálogo y certifica tus
+                        productos.</li>
+                    <li><mat-icon>ads_click</mat-icon> <strong>Smart Ads:</strong> Aparece justo cuando el cultivador te
+                        necesita.</li>
+                    <li><mat-icon>insights</mat-icon> <strong>Data Real:</strong> Analiza el rendimiento de tus
+                        genéticas o abonos.</li>
+                </ul>
+
+                <button mat-stroked-button class="b2b-cta">
+                    <mat-icon>business_center</mat-icon>
+                    Colaborar con AIToFlower
+                </button>
+            </div>
+            <div class="b2b-visual">
+                <mat-icon class="b2b-icon">storefront</mat-icon>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="main-footer">
+        <div class="footer-links">
+            <a routerLink="/terms">Términos</a>
+            <a routerLink="/privacy">Privacidad</a>
+            <a href="mailto:info@aitoflower.com">Hablemos</a>
+        </div>
+
+        <div class="legal-disclaimer">
+            <p>AIToFlower te ayuda, pero el jardinero eres tú.</p>
+            <p>Cultiva con responsabilidad y cumple las leyes de tu zona.</p>
+        </div>
+
+        <p class="copyright">Hecho con 💚 y buenos humos.</p>
+    </footer>
+
+    <!-- Back to Top Button (Hidden by default, toggled via class) -->
+    <button mat-fab color="primary" class="back-to-top" [class.visible]="showBackToTop" (click)="scrollToTop()">
+        <mat-icon>arrow_upward</mat-icon>
+    </button>
+</div>

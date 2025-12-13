@@ -1,0 +1,59 @@
+// Custom Theming for Angular Material
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+// Create the theme object using Material 3 API with Standard Palettes
+// We will override the specific colors using CSS variables below
+$aitoflower-pwa-theme: mat.define-theme((color: (theme-type: dark),
+            typography: (brand-family: 'Roboto',
+                plain-family: 'Roboto',
+            ),
+            density: (scale: 0)));
+
+// Include theme styles
+@include mat.all-component-themes($aitoflower-pwa-theme);
+
+/* Global Styles */
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #0d0d0d;
+    color: #e0e0e0;
+}
+
+/* CSS Variable Overrides for Neon Green */
+:root {
+    /* Override Material 3 Primary Color Tokens */
+    --mat-sys-primary: #00e676;
+    --mat-sys-on-primary: #000000;
+    --mat-sys-primary-container: #00a854;
+    --mat-sys-on-primary-container: #000000;
+
+    /* M2 Compat overrides if needed */
+    --mdc-theme-primary: #00e676;
+    --mdc-theme-on-primary: #000000;
+}
+
+/* Custom Scrollbar for dark theme */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #00e676;
+}
