@@ -1,0 +1,47 @@
+<div class="dashboard-container">
+    <mat-toolbar class="dashboard-toolbar">
+        <button mat-icon-button (click)="snav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <span>AIToFlower App</span>
+        <span class="spacer"></span>
+        <button mat-icon-button *ngIf="authService.isLoggedIn()">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+    </mat-toolbar>
+
+    <mat-sidenav-container class="sidenav-container">
+        <mat-sidenav #snav mode="side" opened fixedInViewport="true" fixedTopGap="64">
+            <mat-nav-list>
+                <a mat-list-item routerLink="/dashboard/home" routerLinkActive="active">
+                    <mat-icon matListItemIcon>dashboard</mat-icon>
+                    <span matListItemTitle>Resumen</span>
+                </a>
+                <a mat-list-item>
+                    <mat-icon matListItemIcon>local_florist</mat-icon>
+                    <span matListItemTitle>Mis Cultivos</span>
+                </a>
+                <a mat-list-item routerLink="/dashboard/almacen" routerLinkActive="active">
+                    <mat-icon matListItemIcon>inventory</mat-icon>
+                    <span matListItemTitle>Almacén</span>
+                </a>
+                <a mat-list-item>
+                    <mat-icon matListItemIcon>calendar_today</mat-icon>
+                    <span matListItemTitle>Calendario</span>
+                </a>
+                <a mat-list-item>
+                    <mat-icon matListItemIcon>settings</mat-icon>
+                    <span matListItemTitle>Ajustes</span>
+                </a>
+                <a mat-list-item (click)="logout()" style="cursor: pointer;">
+                    <mat-icon matListItemIcon>logout</mat-icon>
+                    <span matListItemTitle>Salir</span>
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+
+        <mat-sidenav-content>
+            <router-outlet></router-outlet>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</div>

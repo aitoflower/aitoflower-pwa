@@ -1,0 +1,66 @@
+<div class="home-container">
+    <!-- Login Banner for Non-Authenticated Users -->
+    <div *ngIf="!authService.isLoggedIn()" class="login-banner">
+        <div class="banner-content">
+            <mat-icon>info</mat-icon>
+            <div class="banner-text">
+                <h3>Modo Invitado</h3>
+                <p>Estás navegando como invitado. Algunas funcionalidades están restringidas.</p>
+            </div>
+            <button mat-flat-button color="primary" (click)="login()">Iniciar Sesión</button>
+        </div>
+    </div>
+
+    <!-- Welcome Banner for Logged In Users -->
+    <div *ngIf="authService.isLoggedIn()" class="welcome-banner">
+        <mat-icon>history</mat-icon>
+        <p *ngIf="lastLogin">Hola de nuevo! Tu última visita fue el {{ lastLogin | date:'medium' }}</p>
+        <p *ngIf="!lastLogin">¡Bienvenido por primera vez!</p>
+    </div>
+
+    <!-- Main Dashboard Content (Always Visible) -->
+    <h1>Dashboard de AIToFlower</h1>
+    <p>Aquí gestionarás tus cultivos (Próximamente).</p>
+
+    <!-- Example of restricted content -->
+    <div class="dashboard-grid">
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Mis Cultivos</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div *ngIf="!authService.isLoggedIn()" class="restricted-overlay">
+                    <mat-icon>lock</mat-icon>
+                    <p>Inicia sesión para ver tus cultivos</p>
+                </div>
+                <div *ngIf="authService.isLoggedIn()">
+                    <p>No tienes cultivos activos aún.</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Calendario</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>Vista previa del calendario (disponible para todos)</p>
+            </mat-card-content>
+        </mat-card>
+
+        <mat-card class="dashboard-card">
+            <mat-card-header>
+                <mat-card-title>Estadísticas</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div *ngIf="!authService.isLoggedIn()" class="restricted-overlay">
+                    <mat-icon>lock</mat-icon>
+                    <p>Inicia sesión para ver estadísticas</p>
+                </div>
+                <div *ngIf="authService.isLoggedIn()">
+                    <p>Sin datos disponibles aún.</p>
+                </div>
+            </mat-card-content>
+        </mat-card>
+    </div>
+</div>

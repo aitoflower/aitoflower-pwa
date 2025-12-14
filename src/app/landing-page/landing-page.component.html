@@ -13,8 +13,9 @@
                 <a href="#features" (click)="toggleMobileMenu()">El Team</a>
                 <a href="#how-it-works" (click)="toggleMobileMenu()">Cómo va</a>
                 <a href="#pricing" (click)="toggleMobileMenu()">Precios</a>
-                <a href="#b2b" (click)="toggleMobileMenu()">Empresas</a>
-                <button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Entrar</button>
+                <a routerLink="/business" (click)="toggleMobileMenu()">Empresas</a>
+                <button mat-stroked-button class="nav-cta" routerLink="/dashboard"
+                    (click)="toggleMobileMenu()">Entrar</button>
             </nav>
         </div>
     </header>
@@ -28,9 +29,9 @@
             </p>
 
             <div class="cta-group">
-                <button mat-flat-button color="primary" class="cta-primary">
+                <button mat-flat-button color="primary" class="cta-primary" routerLink="/dashboard">
                     <mat-icon>rocket_launch</mat-icon>
-                    Empieza gratris
+                    Empieza gratis
                 </button>
                 <button mat-stroked-button class="cta-secondary">
                     <mat-icon>play_circle_outline</mat-icon>
@@ -71,7 +72,7 @@
             <p>Tu agrónomo de bolsillo que te dice <strong>exactamente qué hacer</strong> para sacar cogollos como puños
                 sin estrés.</p>
 
-            <button mat-flat-button color="primary" class="solution-cta">
+            <button mat-flat-button color="primary" class="solution-cta" routerLink="/dashboard">
                 <mat-icon>arrow_forward</mat-icon>
                 Empezar ahora
             </button>
@@ -134,7 +135,7 @@
         <ol class="steps-list">
             <li>
                 <span class="step-text">Creas tu cultivo en 1 min</span>
-                <button mat-button class="step-cta">Entrar</button>
+                <button mat-button class="step-cta" routerLink="/dashboard">Entrar</button>
             </li>
             <li>Registras riegos (o lo que surja)</li>
             <li>Sigues los consejos del Jefe (la IA)</li>
@@ -181,7 +182,7 @@
                 <li>1 Revisión por cultivo</li>
                 <li>Historial 2 cultivos</li>
             </ul>
-            <button mat-flat-button color="primary">Empezar</button>
+            <button mat-flat-button disabled="true">Solo Invitación</button>
         </div>
 
         <!-- 2. Cogollo -->
@@ -195,7 +196,7 @@
                 <li>1 Diag. Imagen/sem</li>
                 <li>Historial 10 cultivos</li>
             </ul>
-            <button mat-flat-button color="primary">Elegir</button>
+            <button mat-flat-button disabled="true">Solo Invitación</button>
         </div>
 
         <!-- 3. Cosecha -->
@@ -209,7 +210,7 @@
                 <li>1 Diag. Imagen/día</li>
                 <li>Historial 100 cultivos</li>
             </ul>
-            <button mat-flat-button color="primary">Elegir</button>
+            <button mat-flat-button disabled="true">Solo Invitación</button>
         </div>
 
         <!-- 4. Granja (Enterprise) -->
@@ -223,8 +224,23 @@
                 <li>Diag. Imagen personalizados</li>
                 <li>Historial personalizado</li>
             </ul>
-            <a mat-flat-button color="primary"
-                href="mailto:info@aitoflower.com?subject=Contacto para cuenta personalizada de AIToFlower">Contactar</a>
+            <button mat-flat-button disabled="true">Solo Invitación</button>
+        </div>
+    </section>
+
+    <!-- Newsletter / Waiting List Section -->
+    <section class="newsletter-section">
+        <div class="newsletter-content">
+            <mat-icon class="newsletter-icon">mark_email_unread</mat-icon>
+            <h2>¡No te quedes fuera!</h2>
+            <p>El acceso es limitado. Déjanos tu email y te avisamos cuando abramos plazas o lancemos betas.</p>
+
+            <form class="newsletter-form" (submit)="$event.preventDefault()">
+                <input type="email" placeholder="Tu mejor email..." required class="newsletter-input">
+                <button mat-flat-button color="primary" type="submit" class="newsletter-btn">
+                    Avísame 🚀
+                </button>
+            </form>
         </div>
     </section>
 
@@ -246,7 +262,7 @@
                         genéticas o abonos.</li>
                 </ul>
 
-                <button mat-stroked-button class="b2b-cta">
+                <button mat-stroked-button class="b2b-cta" routerLink="/business">
                     <mat-icon>business_center</mat-icon>
                     Colaborar con AIToFlower
                 </button>

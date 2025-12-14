@@ -1,0 +1,357 @@
+.almacen-container {
+    padding: 24px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* Header */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.header-content h1 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 8px 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.header-content h1 mat-icon {
+    color: #00e676;
+    font-size: 32px;
+    width: 32px;
+    height: 32px;
+}
+
+.subtitle {
+    margin: 0;
+    color: #b0bec5;
+}
+
+/* Login Warning */
+.login-warning {
+    background: rgba(255, 152, 0, 0.1);
+    border: 1px solid rgba(255, 152, 0, 0.3);
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    color: #ff9800;
+}
+
+.login-warning mat-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.login-warning p {
+    flex: 1;
+    margin: 0;
+}
+
+.login-warning button {
+    flex-shrink: 0;
+}
+
+/* Stats Grid */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr) auto;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.stat-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px !important;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(0, 230, 118, 0.3);
+}
+
+.stat-card-small {
+    padding: 12px !important;
+}
+
+.stat-card-large {
+    grid-column: 6;
+    grid-row: 1 / 3;
+    background: rgba(0, 230, 118, 0.05);
+    border: 1px solid rgba(0, 230, 118, 0.2);
+    flex-direction: column;
+    justify-content: center;
+    min-width: 150px;
+}
+
+.stat-icon {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: #00e676;
+}
+
+.stat-icon-small {
+    font-size: 28px;
+    width: 28px;
+    height: 28px;
+}
+
+.stat-card-large .stat-icon {
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+}
+
+.stat-content h3 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.stat-card-small .stat-content h3 {
+    font-size: 1.4rem;
+}
+
+.stat-card-large .stat-content h3 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.stat-content p {
+    margin: 4px 0 0 0;
+    color: #b0bec5;
+    font-size: 0.85rem;
+}
+
+.stat-card-large .stat-content p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+/* Inventory Card */
+.inventory-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.inventory-card mat-card-title {
+    color: #fff;
+}
+
+/* Table */
+.inventory-table {
+    width: 100%;
+    background: transparent;
+}
+
+.inventory-table th {
+    color: #00e676;
+    font-weight: 600;
+}
+
+.inventory-table td,
+.inventory-table th {
+    color: #e0e0e0;
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+.product-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.category-icon {
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.category-icon.semilla {
+    color: #00e676;
+}
+
+.category-icon.maceta {
+    color: #8d6e63;
+}
+
+.category-icon.sustrato {
+    color: #8bc34a;
+}
+
+.category-icon.nutriente {
+    color: #4caf50;
+}
+
+.category-icon.iluminacion {
+    color: #ffc107;
+}
+
+.category-icon.riego {
+    color: #2196f3;
+}
+
+.category-icon.ambiente {
+    color: #03a9f4;
+}
+
+.category-icon.herramienta {
+    color: #9e9e9e;
+}
+
+.category-icon.otro {
+    color: #b0bec5;
+}
+
+.product-cell small {
+    display: block;
+    color: #b0bec5;
+    font-size: 0.85rem;
+}
+
+/* Chips */
+mat-chip {
+    font-size: 0.85rem;
+}
+
+.chip-semilla {
+    background: rgba(0, 230, 118, 0.2) !important;
+    color: #00e676 !important;
+}
+
+.chip-maceta {
+    background: rgba(141, 110, 99, 0.2) !important;
+    color: #8d6e63 !important;
+}
+
+.chip-sustrato {
+    background: rgba(139, 195, 74, 0.2) !important;
+    color: #8bc34a !important;
+}
+
+.chip-nutriente {
+    background: rgba(76, 175, 80, 0.2) !important;
+    color: #4caf50 !important;
+}
+
+.chip-iluminacion {
+    background: rgba(255, 193, 7, 0.2) !important;
+    color: #ffc107 !important;
+}
+
+.chip-riego {
+    background: rgba(33, 150, 243, 0.2) !important;
+    color: #2196f3 !important;
+}
+
+.chip-ambiente {
+    background: rgba(3, 169, 244, 0.2) !important;
+    color: #03a9f4 !important;
+}
+
+.chip-herramienta {
+    background: rgba(158, 158, 158, 0.2) !important;
+    color: #9e9e9e !important;
+}
+
+.chip-otro {
+    background: rgba(176, 190, 197, 0.2) !important;
+    color: #b0bec5 !important;
+}
+
+.quantity-badge {
+    background: rgba(0, 230, 118, 0.1);
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-weight: 500;
+    color: #00e676;
+}
+
+/* Restricted Overlay */
+.restricted-overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    border: 1px dashed rgba(255, 152, 0, 0.3);
+}
+
+.restricted-overlay mat-icon {
+    font-size: 64px;
+    width: 64px;
+    height: 64px;
+    color: rgba(255, 152, 0, 0.6);
+    margin-bottom: 16px;
+}
+
+.restricted-overlay p {
+    color: #b0bec5;
+    margin: 0;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-state mat-icon {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+    color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 16px;
+}
+
+.empty-state h3 {
+    color: #fff;
+    margin: 0 0 8px 0;
+}
+
+.empty-state p {
+    color: #b0bec5;
+    margin: 0 0 24px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .page-header {
+        flex-direction: column;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+    .stat-card-large {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        flex-direction: row;
+    }
+
+    .inventory-table {
+        font-size: 0.9rem;
+    }
+}

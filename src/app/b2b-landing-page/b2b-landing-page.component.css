@@ -1,0 +1,360 @@
+/* Reuse core vars/styles effectively by scoping or just copying relevant parts */
+:host {
+    font-family: 'Inter', 'Roboto', sans-serif;
+    color: #e0e0e0;
+    line-height: 1.6;
+    display: block;
+    background-color: #0d0d0d;
+    min-height: 100vh;
+}
+
+.landing-container {
+    padding-bottom: 0;
+}
+
+/* B2B Theme Overrides - Purple Accent */
+.b2b-theme {
+    /* Background similar to main but maybe more purple hints */
+    background:
+        radial-gradient(circle at 10% 20%, rgba(101, 31, 255, 0.15) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(179, 136, 255, 0.1) 0%, transparent 40%);
+}
+
+.landing-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+    background: rgba(13, 13, 13, 0.85);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge-b2b-nav {
+    background: rgba(101, 31, 255, 0.2);
+    color: #b388ff;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #b0bec5;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #b388ff;
+}
+
+.nav-cta {
+    border-color: #b388ff !important;
+    color: #b388ff !important;
+    border-radius: 20px !important;
+}
+
+/* Hero */
+.hero-section {
+    text-align: center;
+    padding: 120px 24px 60px;
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+    background: linear-gradient(135deg, #ffffff 0%, #b388ff 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: #b0bec5;
+    margin-bottom: 48px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.cta-primary {
+    background: #651fff !important;
+    /* Deep Purple */
+    color: #fff !important;
+    font-weight: 600 !important;
+    padding: 0 40px !important;
+    height: 56px !important;
+    border-radius: 28px !important;
+    font-size: 1.1rem !important;
+    box-shadow: 0 0 20px rgba(101, 31, 255, 0.4);
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.cta-primary:hover {
+    box-shadow: 0 0 30px rgba(101, 31, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.cta-secondary {
+    border-color: rgba(255, 255, 255, 0.3) !important;
+    color: white !important;
+    height: 56px !important;
+    padding: 0 30px !important;
+    border-radius: 28px !important;
+    font-size: 1.1rem !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.hero-dashboard-preview {
+    max-width: 800px;
+    height: 300px;
+    /* Placeholder height */
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preview-icon {
+    font-size: 80px;
+    width: 80px;
+    height: 80px;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+/* Features */
+.features-section {
+    padding: 80px 24px;
+    text-align: center;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 50px auto 0;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 24px;
+    padding: 30px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(101, 31, 255, 0.5);
+}
+
+.feature-card mat-icon {
+    color: #b388ff;
+    width: 40px;
+    height: 40px;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.feature-card mat-card-title {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+}
+
+.feature-card p {
+    color: #b0bec5;
+    margin: 0 0 10px;
+}
+
+/* Pricing */
+.pricing-section {
+    padding: 80px 24px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.pricing-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.pricing-card {
+    width: 320px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 24px;
+    padding: 40px 30px;
+    text-align: center;
+    position: relative;
+}
+
+.pricing-card.featured {
+    border-color: #651fff;
+    background: rgba(101, 31, 255, 0.05);
+    transform: scale(1.05);
+}
+
+.popular-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #651fff;
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.price-tag {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 20px 0;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-bottom: 30px;
+    color: #cfd8dc;
+}
+
+.pricing-card ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding-bottom: 10px;
+}
+
+.btn-basic {
+    width: 100%;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.main-footer {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Mobile Menu Toggle (B2B specific or shared if refactored) */
+.mobile-menu-toggle {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .mobile-menu-toggle {
+        display: block !important;
+        color: #fff;
+    }
+
+    /* Mobile Nav Overlay */
+    .main-nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(13, 13, 13, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: height 0.3s ease, padding 0.3s ease;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        display: flex;
+        /* Override display: none from desktop default if needed, or adjust */
+        padding: 0;
+    }
+
+    .main-nav.open {
+        height: auto;
+        padding: 40px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .main-nav a {
+        font-size: 1.2rem;
+        margin: 15px 0;
+        display: block;
+    }
+
+    .nav-cta {
+        margin-top: 20px;
+        width: 80%;
+        height: 48px !important;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .pricing-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
