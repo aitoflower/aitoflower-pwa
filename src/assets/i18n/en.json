@@ -1,0 +1,75 @@
+{
+  "APP": {
+    "TITLE": "AIToFlower"
+  },
+  "HEADER": {
+    "LANGUAGE": "Language",
+    "LOGIN": "Login"
+  },
+  "DASHBOARD": {
+    "TITLE": "Dashboard",
+    "SUMMARY": "Summary"
+  },
+  "LANDING": {
+    "CTA": "Get started",
+    "HEADER": {
+      "NAV": {
+        "HOME": "Home",
+        "TEAM": "The Team",
+        "HOW": "How it works",
+        "PRICING": "Pricing",
+        "BUSINESS": "Business"
+      },
+      "CTA": "Sign in"
+    },
+    "HERO": {
+      "TITLE": "Grow autoflowers without mistakes.",
+      "SUBTITLE": "AI assistant that guides you daily with watering, nutrients and problem detection.",
+      "CTA_PRIMARY": "Start free",
+      "CTA_SECONDARY": "See how it works"
+    },
+    "PROBLEM": {
+      "TITLE": "Problems in your grow?",
+      "LEAD": "Autoflowers are demanding and won't forgive mistakes:",
+      "P1": "Plants stayed too small?",
+      "P2": "Yellow or burned leaves?",
+      "P3": "Tiny harvest?"
+    },
+    "SOLUTION": {
+      "TITLE": "Grow with confidence",
+      "LEAD": "AIToFlower is your guide.",
+      "BODY": "Your pocket agronomist that tells you exactly what to do to get big buds without stress.",
+      "CTA": "Start now"
+    },
+    "FEATURES": {
+      "TITLE": "Your Growing Team",
+      "NANNY": { "TITLE": "24/7 Nanny", "P1": "Counts the days for you", "P2": "Knows the current stage", "P3": "Alerts you before things go wrong" },
+      "CHEF": { "TITLE": "Nutrient Chef", "P1": "Not a drop too much", "P2": "Personalized feeding schedule", "P3": "Goodbye burnt leaves" },
+      "DETECTOR": { "TITLE": "Brown Spot Detector", "P1": "Upload a pic of the issue", "P2": "Instant diagnosis", "P3": "No forum guesswork" },
+      "BRAIN": { "TITLE": "Big Brain", "P1": "Remembers everything", "P2": "Learns from your grow", "P3": "Clear answers, no fluff" }
+    },
+    "HOW": {
+      "TITLE": "How it works",
+      "P1": "Create your grow in 1 min",
+      "P2": "Log waterings (or whatever happens)",
+      "P3": "Follow the AI's recommendations",
+      "CTA": "Enter",
+      "NOTE": "Enjoy your harvest 🥦"
+    },
+    "WHY": {
+      "TITLE": "Why AIToFlower?",
+      "P1": "Autoflowers only: no filler for photoperiod strains",
+      "P2": "No \"Bro Science\": Data, not myths",
+      "P3": "Elephant memory: it stores everything for you",
+      "P4": "Your pocket agronomist 24/7"
+    },
+    "PRICING": {
+      "INCLUDED": "Everything included in every plan:",
+      "ITEMS": { "CALENDAR": "Calendar", "WIKI": "Wiki", "NUTRITION": "Nutrition", "ALERTS": "Weather alerts" },
+      "PLANS": { "SEED": { "TITLE": "Seed", "PRICE": "FREE" }, "BUD": { "TITLE": "Bud", "PRICE": "€4.20 /mo" }, "HARVEST": { "TITLE": "Harvest", "PRICE": "€9.90 /mo" }, "ENTERPRISE": { "TITLE": "Farm", "PRICE": "Contact" }, "INVITE_ONLY": "By invite only" }
+    },
+    "B2B": { "CTA": "Partner with AIToFlower" },
+    "NEWSLETTER": { "TITLE": "Don't miss out!", "LEAD": "Access is limited. Leave your email and we'll notify you when we open spots or launch betas.", "PLACEHOLDER": "Your best email...", "CTA": "Notify me 🚀" },
+    "FOOTER": { "TERMS": "Terms", "PRIVACY": "Privacy", "CONTACT": "Contact us", "DISCLAIMER_LINE1": "AIToFlower helps you, but you're the grower.", "DISCLAIMER_LINE2": "Grow responsibly and follow local laws." }
+  }
+}

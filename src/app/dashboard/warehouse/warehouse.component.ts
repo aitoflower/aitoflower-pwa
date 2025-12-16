@@ -5,7 +5,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatTableModule } from '@angular/material/table';
-import { AuthService } from '../services/auth.service';
+import { AuthService } from '../../services/auth.service';
 
 interface InventoryItem {
     id: number;
@@ -18,7 +18,7 @@ interface InventoryItem {
 }
 
 @Component({
-    selector: 'app-almacen',
+    selector: 'app-warehouse',
     standalone: true,
     imports: [
         CommonModule,
@@ -28,10 +28,10 @@ interface InventoryItem {
         MatChipsModule,
         MatTableModule
     ],
-    templateUrl: './almacen.component.html',
-    styleUrls: ['./almacen.component.css']
+    templateUrl: './warehouse.component.html',
+    styleUrls: ['./warehouse.component.css']
 })
-export class AlmacenComponent {
+export class WarehouseComponent {
     authService = inject(AuthService);
 
     displayedColumns: string[] = ['name', 'category', 'brand', 'quantity', 'actions'];

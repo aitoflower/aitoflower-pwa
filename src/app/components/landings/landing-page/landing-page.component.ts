@@ -5,17 +5,34 @@ import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 
 import { RouterLink } from '@angular/router';
+import { LanguageSelectorComponent } from '../../shared/language-selector/language-selector.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
   standalone: true,
-  imports: [CommonModule, MatButtonModule, MatCardModule, MatIconModule, RouterLink],
+  imports: [
+    CommonModule,
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule,
+    RouterLink,
+    LanguageSelectorComponent,
+    TranslateModule,
+  ],
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.css']
+  styleUrls: ['./landing-page.component.css'],
 })
 export class LandingPageComponent {
   showBackToTop = false;
   isMobileMenuOpen = false;
+
+
+  constructor(private translate: TranslateService) {}
+
+  ngOnInit() {
+    console.log('currentLang', this.translate.currentLang);
+  }
 
   toggleMobileMenu() {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;

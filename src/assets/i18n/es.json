@@ -1,0 +1,118 @@
+{
+  "APP": {
+    "TITLE": "AIToFlower"
+  },
+  "HEADER": {
+    "LANGUAGE": "Idioma",
+    "LOGIN": "Acceder"
+  },
+  "DASHBOARD": {
+    "TITLE": "Panel",
+    "SUMMARY": "Resumen"
+  },
+  "LANDING": {
+    "CTA": "Empieza",
+    "HEADER": {
+      "NAV": {
+        "HOME": "Inicio",
+        "TEAM": "El Team",
+        "HOW": "Cómo va",
+        "PRICING": "Precios",
+        "BUSINESS": "Empresas"
+      },
+      "CTA": "Entrar"
+    },
+    "HERO": {
+      "TITLE": "Cultiva cannabis sin errores.",
+      "SUBTITLE": "Asistente IA que te guía día a día con riegos, nutrientes y detección de problemas.",
+      "CTA_PRIMARY": "Empieza gratis",
+      "CTA_SECONDARY": "Ver cómo funciona"
+    },
+    "PROBLEM": {
+      "TITLE": "¿Problemas en el cultivo?",
+      "LEAD": "Las plantas son exigentes y no perdonan una:",
+      "P1": "¿Se quedaron enanas?",
+      "P2": "¿Hojas amarillas o quemadas?",
+      "P3": "¿Cosecha ridícula?"
+    },
+    "SOLUTION": {
+      "TITLE": "Cultiva con seguridad",
+      "LEAD": "AIToFlower es tu guía.",
+      "BODY": "Tu agrónomo de bolsillo que te dice exactamente qué hacer para sacar cogollos como puños sin estrés.",
+      "CTA": "Empezar ahora"
+    },
+    "FEATURES": {
+      "TITLE": "Tu Team de Cultivo",
+      "NANNY": {
+        "TITLE": "Niñera 24/7",
+        "P1": "Cuenta los días por ti",
+        "P2": "Sabe en qué etapa está",
+        "P3": "Te avisa si la vas a liar"
+      },
+      "CHEF": {
+        "TITLE": "Chef de Nutrientes",
+        "P1": "Ni una gota de más",
+        "P2": "Tabla de dieta personalizada",
+        "P3": "Adiós hojas quemadas"
+      },
+      "DETECTOR": {
+        "TITLE": "Detector de Marrones",
+        "P1": "Sube foto de lo raro",
+        "P2": "Diagnóstico al instante",
+        "P3": "Sin cuñadismos de foro"
+      },
+      "BRAIN": {
+        "TITLE": "Cerebro Gordo",
+        "P1": "Se acuerda de todo",
+        "P2": "Aprende de tu jardín",
+        "P3": "Respuestas claras, no rollos"
+      }
+    },
+    "HOW": {
+      "TITLE": "Cómo va la historia",
+      "P1": "Creas tu cultivo en 1 min",
+      "P2": "Registras riegos (o lo que surja)",
+      "P3": "Sigues los consejos del Jefe (la IA)",
+      "CTA": "Entrar",
+      "NOTE": "Disfruta tu cosecha 🥦"
+    },
+    "WHY": {
+      "TITLE": "¿Por qué AIToFlower?",
+      "P1": "Solo Autos: Nada de relleno para fotodependientes",
+      "P2": "Cero \"Bro Science\": Datos, no mitos",
+      "P3": "Memoria de elefante: Lo guarda todo por ti",
+      "P4": "Tu agrónomo de bolsillo 24/7",
+      "DISCLAIMER": "Evita los errores de novato (y los de no tan novato)."
+    },
+    "PRICING": {
+      "INCLUDED": "Todo incluido en cualquier plan:",
+      "ITEMS": {
+        "CALENDAR": "Calendario",
+        "WIKI": "Wiki",
+        "NUTRITION": "Nutrición",
+        "ALERTS": "Alertas Clima"
+      },
+      "PLANS": {
+        "SEED": { "TITLE": "Semilla", "PRICE": "GRATIS" },
+        "BUD": { "TITLE": "Cogollo", "PRICE": "4.20€ /mes" },
+        "HARVEST": { "TITLE": "Cosecha", "PRICE": "9.90€ /mes" },
+        "ENTERPRISE": { "TITLE": "Granja", "PRICE": "Consultar" },
+        "INVITE_ONLY": "Solo Invitación"
+      }
+    },
+    "B2B": { "CTA": "Colaborar con AIToFlower" },
+    "NEWSLETTER": {
+      "TITLE": "¡No te quedes fuera!",
+      "LEAD": "El acceso es limitado. Déjanos tu email y te avisamos cuando abramos plazas o lancemos betas.",
+      "PLACEHOLDER": "Tu mejor email...",
+      "CTA": "Avísame 🚀"
+    },
+    "FOOTER": {
+      "TERMS": "Términos",
+      "PRIVACY": "Privacidad",
+      "CONTACT": "Hablemos",
+      "DISCLAIMER_LINE1": "AIToFlower te ayuda, pero el jardinero eres tú.",
+      "DISCLAIMER_LINE2": "Cultiva con responsabilidad y cumple las leyes de tu zona."
+    }
+  }
+}

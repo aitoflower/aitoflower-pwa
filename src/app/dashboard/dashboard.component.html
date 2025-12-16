@@ -5,6 +5,7 @@
         </button>
         <span>AIToFlower App</span>
         <span class="spacer"></span>
+        <app-language-selector></app-language-selector>
         <button mat-icon-button *ngIf="authService.isLoggedIn()">
             <mat-icon>account_circle</mat-icon>
         </button>
@@ -21,7 +22,7 @@
                     <mat-icon matListItemIcon>local_florist</mat-icon>
                     <span matListItemTitle>Mis Cultivos</span>
                 </a>
-                <a mat-list-item routerLink="/dashboard/almacen" routerLinkActive="active">
+                <a mat-list-item routerLink="/dashboard/warehouse" routerLinkActive="active">
                     <mat-icon matListItemIcon>inventory</mat-icon>
                     <span matListItemTitle>Almacén</span>
                 </a>

@@ -1,5 +1,6 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterOutlet } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,16 @@ import { RouterOutlet } from '@angular/router';
 })
 export class App {
   protected readonly title = signal('aitoflower-pwa');
+
+  constructor(private translate: TranslateService,
+  private router: Router) {
+    this.translate.setDefaultLang('es');
+    this.translate.use('es');
+
+    this.router.events.subscribe(() => {
+      if (!this.translate.currentLang) {
+        this.translate.use('es');
+      }
+    });
+  }
 }

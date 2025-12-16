@@ -1,0 +1,131 @@
+{
+  "APP": {
+    "TITLE": "AIToFlower"
+  },
+  "HEADER": {
+    "LANGUAGE": "Sprache",
+    "LOGIN": "Anmelden"
+  },
+  "DASHBOARD": {
+    "TITLE": "Dashboard",
+    "SUMMARY": "Übersicht"
+  },
+  "LANDING": {
+    "CTA": "Loslegen",
+    "HEADER": {
+      "NAV": {
+        "HOME": "Start",
+        "TEAM": "Team",
+        "HOW": "Wie es funktioniert",
+        "PRICING": "Preise",
+        "BUSINESS": "Business"
+      },
+      "CTA": "Anmelden"
+    },
+    "HERO": {
+      "TITLE": "Autoflower ohne Fehler anbauen.",
+      "SUBTITLE": "KI-Assistent, der dich täglich bei Bewässerung, Nährstoffen und Problemerkennung unterstützt.",
+      "CTA_PRIMARY": "Kostenlos starten",
+      "CTA_SECONDARY": "So funktioniert es"
+    },
+    "PROBLEM": {
+      "TITLE": "Probleme im Anbau?",
+      "LEAD": "Autoflower sind anspruchsvoll und verzeihen keine Fehler:",
+      "P1": "Sind die Pflanzen zu klein geblieben?",
+      "P2": "Gelbe oder verbrannte Blätter?",
+      "P3": "Mickrige Ernte?"
+    },
+    "SOLUTION": {
+      "TITLE": "Sicher anbauen",
+      "LEAD": "AIToFlower ist dein Ratgeber.",
+      "BODY": "Dein Agronom in der Hosentasche, der dir genau sagt, was zu tun ist, um große Buds stressfrei zu erzielen.",
+      "CTA": "Jetzt starten"
+    },
+    "FEATURES": {
+      "TITLE": "Dein Grow-Team",
+      "NANNY": {
+        "TITLE": "24/7 Nanny",
+        "P1": "Zählt die Tage für dich",
+        "P2": "Kennt die aktuelle Phase",
+        "P3": "Warnt bevor etwas schiefgeht"
+      },
+      "CHEF": {
+        "TITLE": "Nährstoff-Chef",
+        "P1": "Kein Tropfen zu viel",
+        "P2": "Personalisierter Fütterungsplan",
+        "P3": "Adieu verbrannte Blätter"
+      },
+      "DETECTOR": {
+        "TITLE": "Fleckendetektor",
+        "P1": "Lade ein Foto des Problems hoch",
+        "P2": "Sofortige Diagnose",
+        "P3": "Keine Forumsspekulationen"
+      },
+      "BRAIN": {
+        "TITLE": "Großes Gehirn",
+        "P1": "Erinnert sich an alles",
+        "P2": "Lernt von deinem Grow",
+        "P3": "Klare Antworten, kein Bla Bla"
+      }
+    },
+    "HOW": {
+      "TITLE": "Wie es funktioniert",
+      "P1": "Erstelle deinen Grow in 1 Min",
+      "P2": "Protokolliere Bewässerungen (oder was passiert)",
+      "P3": "Folge den Empfehlungen der KI",
+      "CTA": "Einloggen",
+      "NOTE": "Genieße deine Ernte 🥦"
+    },
+    "WHY": {
+      "TITLE": "Warum AIToFlower?",
+      "P1": "Nur Autoflower: kein Füllstoff für Fotoperioden",
+      "P2": "Kein \"Bro Science\": Daten, keine Mythen",
+      "P3": "Elefantengedächtnis: speichert alles für dich",
+      "P4": "Dein Agronom in der Tasche 24/7"
+    },
+    "PRICING": {
+      "INCLUDED": "Alles in jedem Plan enthalten:",
+      "ITEMS": {
+        "CALENDAR": "Kalender",
+        "WIKI": "Wiki",
+        "NUTRITION": "Ernährung",
+        "ALERTS": "Wetterwarnungen"
+      },
+      "PLANS": {
+        "SEED": {
+          "TITLE": "Seed",
+          "PRICE": "KOSTENLOS"
+        },
+        "BUD": {
+          "TITLE": "Bud",
+          "PRICE": "4,20€ /Monat"
+        },
+        "HARVEST": {
+          "TITLE": "Harvest",
+          "PRICE": "9,90€ /Monat"
+        },
+        "ENTERPRISE": {
+          "TITLE": "Farm",
+          "PRICE": "Anfrage"
+        },
+        "INVITE_ONLY": "Nur auf Einladung"
+      }
+    },
+    "B2B": {
+      "CTA": "Partner werden"
+    },
+    "NEWSLETTER": {
+      "TITLE": "Nicht verpassen!",
+      "LEAD": "Der Zugang ist begrenzt. Hinterlasse deine E-Mail und wir informieren dich, wenn wir Plätze öffnen oder Betas starten.",
+      "PLACEHOLDER": "Deine beste E-Mail...",
+      "CTA": "Benachrichtige mich 🚀"
+    },
+    "FOOTER": {
+      "TERMS": "AGB",
+      "PRIVACY": "Datenschutz",
+      "CONTACT": "Kontakt",
+      "DISCLAIMER_LINE1": "AIToFlower hilft dir, aber du bist der Gärtner.",
+      "DISCLAIMER_LINE2": "Baue verantwortungsbewusst an und beachte die lokalen Gesetze."
+    }
+  }
+}
