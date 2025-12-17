@@ -1,0 +1,153 @@
+:host {
+  display: block;
+  background: radial-gradient(
+      circle at top,
+      rgba(120, 180, 255, 0.25),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #071522, #020b13);
+  color: #e8f2ff;
+}
+
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  max-width: 920px;
+  margin: auto;
+}
+
+.badge {
+  color: #6ab8ff;
+  letter-spacing: 0.15em;
+  font-weight: 600;
+}
+
+.subtitle {
+  color: #b6d6ff;
+  margin: 1.5rem 0 2.5rem;
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+  padding-top: 5rem;
+}
+
+.value-card {
+  background: rgba(10, 30, 55, 0.6);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 1.6rem;
+  text-align: center;
+
+  mat-icon {
+    font-size: 36px;
+    color: #6ab8ff;
+  }
+}
+
+.use-cases {
+  text-align: center;
+  padding: 4rem 1rem;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    max-width: 520px;
+    margin: 2rem auto 0;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 0.8rem;
+      color: #cfe6ff;
+
+      mat-icon {
+        color: #6ab8ff;
+      }
+    }
+  }
+}
+
+.pricing {
+  text-align: center;
+  padding: 5rem 1rem;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.pricing-card {
+  background: rgba(10, 30, 55, 0.65);
+  backdrop-filter: blur(12px);
+  border-radius: 22px;
+  padding: 2rem 1.5rem;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+  }
+}
+
+.highlight {
+  border: 1px solid #6ab8ff;
+  box-shadow: 0 0 45px rgba(106, 184, 255, 0.45);
+}
+
+.price {
+  margin: 1.5rem 0;
+
+  .amount {
+    font-size: 2.4rem;
+    font-weight: 700;
+  }
+
+  .period {
+    color: #9fc9ff;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #cfe6ff;
+
+    mat-icon {
+      font-size: 18px;
+      color: #6ab8ff;
+    }
+  }
+}
+
+.final-cta {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(80, 150, 255, 0.18)
+  );
+}

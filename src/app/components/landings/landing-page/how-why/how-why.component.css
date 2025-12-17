@@ -1,0 +1,93 @@
+/* 4. How it Works */
+.how-it-works-section {
+    text-align: center;
+    /* background-color: rgba(255,255,255,0.02); */
+}
+
+.steps-list {
+    list-style: none;
+    padding: 0;
+    counter-reset: step-counter;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 50px 0;
+    color: #fff;
+}
+
+.steps-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.steps-list li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    background: linear-gradient(135deg, #00e676, #00c853);
+    color: #000;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 20px;
+    box-shadow: 0 0 15px rgba(0, 230, 118, 0.3);
+}
+
+.simple-note {
+    font-size: 1.1rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* 5. Differentiators */
+.differentiators-section {
+    text-align: center;
+}
+
+.checklist {
+    list-style: none;
+    padding: 0;
+    max-width: 650px;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: left;
+}
+
+.checklist li {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    color: #e0e0e0;
+}
+
+.checklist mat-icon {
+    color: #00e676;
+}
+/* Step Button */
+.step-cta {
+    margin-left: 15px;
+    border: 1px solid rgba(0, 230, 118, 0.3) !important;
+    color: #00e676 !important;
+    height: 32px !important;
+    line-height: 32px !important;
+    padding: 0 16px !important;
+    border-radius: 16px !important;
+    font-size: 0.9rem !important;
+}
+
+.step-cta:hover {
+    background: rgba(0, 230, 118, 0.1) !important;
+}
+
+section {
+    padding: 80px 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+}

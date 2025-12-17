@@ -1,124 +1,104 @@
 <div class="landing-container b2b-theme">
-    <!-- Navbar -->
-    <header class="landing-header">
-        <div class="header-container">
-            <div class="logo">AIToFlower <span class="badge-b2b-nav">BUSINESS</span></div>
+  <app-navigator type="b2b"/>
 
-            <button mat-icon-button class="mobile-menu-toggle" (click)="toggleMobileMenu()">
-                <mat-icon>{{ isMobileMenuOpen ? 'close' : 'menu' }}</mat-icon>
-            </button>
+  <!-- 1. Hero Section -->
+  <section class="hero-section">
+    <div class="hero-content">
+      <h2 class="brand-uptitle">AIToFlower Business</h2>
+      <h1 class="hero-title">Conecta con tus cultivadores. <br />Sin filtros.</h1>
+      <p class="hero-subtitle">
+        La primera plataforma que te da acceso directo a datos reales de rendimiento de tus
+        productos y comunicación directa con quien los usa.
+      </p>
 
-            <nav class="main-nav" [class.open]="isMobileMenuOpen">
-                <a routerLink="/" (click)="toggleMobileMenu()">Volver a AIToFlower</a>
-                <a href="#b2b-solutions"
-                    (click)="$event.preventDefault(); scrollToSection('b2b-solutions'); toggleMobileMenu()">Soluciones</a>
-                <a href="#b2b-pricing"
-                    (click)="$event.preventDefault(); scrollToSection('b2b-pricing'); toggleMobileMenu()">Planes</a>
-                <app-language-selector></app-language-selector>
-                <button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Acceso Partner</button>
-            </nav>
-        </div>
-    </header>
+      <div class="cta-group">
+        <button mat-flat-button color="primary" class="cta-primary">
+          <mat-icon>business_center</mat-icon>
+          Crear Cuenta
+        </button>
+        <button mat-stroked-button class="cta-secondary">
+          <mat-icon>login</mat-icon>
+          Entrar
+        </button>
+      </div>
+    </div>
+    <!-- Visual placeholder for dashboard mockup -->
+    <div class="hero-dashboard-preview">
+      <mat-icon class="preview-icon">analytics</mat-icon>
+    </div>
+  </section>
 
-    <!-- 1. Hero Section -->
-    <section class="hero-section">
-        <div class="hero-content">
-            <h2 class="brand-uptitle">AIToFlower Business</h2>
-            <h1 class="hero-title">Conecta con tus cultivadores. <br>Sin filtros.</h1>
-            <p class="hero-subtitle">La primera plataforma que te da acceso directo a datos reales de rendimiento de tus
-                productos y comunicación directa con quien los usa.</p>
+  <!-- 2. Value Proposition -->
+  <section class="features-section" id="b2b-solutions">
+    <h2>Potencia tu Marca</h2>
+    <div class="features-grid">
+      <mat-card class="feature-card">
+        <mat-card-header>
+          <mat-card-title><mat-icon>insights</mat-icon> Data Real</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Olvídate de "dicen que va bien".</p>
+          <p>Mira gráficas de rendimiento real.</p>
+          <p>Compara genéticas y nutrientes.</p>
+        </mat-card-content>
+      </mat-card>
 
-            <div class="cta-group">
-                <button mat-flat-button color="primary" class="cta-primary">
-                    <mat-icon>business_center</mat-icon>
-                    Crear Cuenta
-                </button>
-                <button mat-stroked-button class="cta-secondary">
-                    <mat-icon>login</mat-icon>
-                    Entrar
-                </button>
-            </div>
-        </div>
-        <!-- Visual placeholder for dashboard mockup -->
-        <div class="hero-dashboard-preview">
-            <mat-icon class="preview-icon">analytics</mat-icon>
-        </div>
-    </section>
+      <mat-card class="feature-card">
+        <mat-card-header>
+          <mat-card-title><mat-icon>forum</mat-icon> Chat Directo</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Soporte técnico directo al cliente.</p>
+          <p>Fidelización al máximo nivel.</p>
+          <p>Resuelve dudas antes de la queja.</p>
+        </mat-card-content>
+      </mat-card>
 
-    <!-- 2. Value Proposition -->
-    <section class="features-section" id="b2b-solutions">
-        <h2>Potencia tu Marca</h2>
-        <div class="features-grid">
-            <mat-card class="feature-card">
-                <mat-card-header>
-                    <mat-card-title><mat-icon>insights</mat-icon> Data Real</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <p>Olvídate de "dicen que va bien".</p>
-                    <p>Mira gráficas de rendimiento real.</p>
-                    <p>Compara genéticas y nutrientes.</p>
-                </mat-card-content>
-            </mat-card>
+      <mat-card class="feature-card">
+        <mat-card-header>
+          <mat-card-title><mat-icon>verified</mat-icon> Catálogo Oficial</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Tus productos, tu información.</p>
+          <p>Evita errores de uso con guías.</p>
+          <p>Certifica tus novedades.</p>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </section>
 
-            <mat-card class="feature-card">
-                <mat-card-header>
-                    <mat-card-title><mat-icon>forum</mat-icon> Chat Directo</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <p>Soporte técnico directo al cliente.</p>
-                    <p>Fidelización al máximo nivel.</p>
-                    <p>Resuelve dudas antes de la queja.</p>
-                </mat-card-content>
-            </mat-card>
+  <!-- 3. Pricing -->
+  <section class="pricing-section" id="b2b-pricing">
+    <div class="pricing-header">
+      <h3>Elige cómo conectar</h3>
+    </div>
 
-            <mat-card class="feature-card">
-                <mat-card-header>
-                    <mat-card-title><mat-icon>verified</mat-icon> Catálogo Oficial</mat-card-title>
-                </mat-card-header>
-                <mat-card-content>
-                    <p>Tus productos, tu información.</p>
-                    <p>Evita errores de uso con guías.</p>
-                    <p>Certifica tus novedades.</p>
-                </mat-card-content>
-            </mat-card>
-        </div>
-    </section>
+    <!-- Free Tier -->
+    <div class="pricing-card">
+      <h3>Partner Básico</h3>
+      <div class="price-tag">GRATIS</div>
+      <ul>
+        <li>Perfil de Marca Verificado</li>
+        <li>Catálogo de Productos</li>
+        <li>Estadísticas Públicas</li>
+      </ul>
+      <button mat-flat-button class="btn-basic">Registrar Marca</button>
+    </div>
 
-    <!-- 3. Pricing -->
-    <section class="pricing-section" id="b2b-pricing">
-        <div class="pricing-header">
-            <h3>Elige cómo conectar</h3>
-        </div>
+    <!-- Paid Tier -->
+    <div class="pricing-card featured">
+      <div class="popular-badge">RECOMENDADO</div>
+      <h3>Partner PRO</h3>
+      <div class="price-tag">Consultar</div>
+      <ul>
+        <li>Todo lo del Básico</li>
+        <li><strong>Chat con Cultivadores</strong></li>
+        <li>Informes de Rendimiento (Data)</li>
+        <li>Smart Ads en la App</li>
+      </ul>
+      <button mat-flat-button color="primary">Contactar Ventas</button>
+    </div>
+  </section>
 
-        <!-- Free Tier -->
-        <div class="pricing-card">
-            <h3>Partner Básico</h3>
-            <div class="price-tag">GRATIS</div>
-            <ul>
-                <li>Perfil de Marca Verificado</li>
-                <li>Catálogo de Productos</li>
-                <li>Estadísticas Públicas</li>
-            </ul>
-            <button mat-flat-button class="btn-basic">Registrar Marca</button>
-        </div>
-
-        <!-- Paid Tier -->
-        <div class="pricing-card featured">
-            <div class="popular-badge">RECOMENDADO</div>
-            <h3>Partner PRO</h3>
-            <div class="price-tag">Consultar</div>
-            <ul>
-                <li>Todo lo del Básico</li>
-                <li><strong>Chat con Cultivadores</strong></li>
-                <li>Informes de Rendimiento (Data)</li>
-                <li>Smart Ads en la App</li>
-            </ul>
-            <button mat-flat-button color="primary">Contactar Ventas</button>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="main-footer">
-        <p class="copyright">AIToFlower Business Solutions © 2024</p>
-    </footer>
+  <app-footer/>
 </div>

@@ -1,0 +1,126 @@
+/* Nav Bar */
+.landing-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    /* Remove padding here, handle in container */
+    z-index: 1000;
+    background: rgba(13, 13, 13, 0.85);
+    /* Semi-transparent dark */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-sizing: border-box;
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #fff;
+    letter-spacing: -0.02em;
+}
+
+.mobile-menu-toggle {
+    display: none !important;
+    /* Hidden on desktop */
+}
+
+.main-nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: #b0bec5;
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+
+.main-nav a:hover {
+    color: #00e676;
+    /* Neon hover */
+}
+
+.nav-cta {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+    padding: 0 20px !important;
+    height: 36px !important;
+}
+
+.nav-cta:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 16px;
+    }
+
+    .mobile-menu-toggle {
+        display: block !important;
+        /* Force show on mobile */
+        color: #fff;
+    }
+
+    .main-nav {
+        position: fixed;
+        top: 70px;
+        /* Below header */
+        left: 0;
+        width: 100%;
+        height: 0;
+        /* Hidden by default */
+        background: rgba(13, 13, 13, 0.95);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        transition: height 0.3s ease, padding 0.3s ease;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        padding: 0;
+    }
+
+    .main-nav.open {
+        height: auto;
+        padding: 40px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .main-nav a {
+        font-size: 1.2rem;
+        margin: 15px 0;
+        display: block;
+    }
+
+    .nav-cta {
+        margin-top: 20px;
+        width: 80%;
+        height: 48px !important;
+    }
+
+
+
+
+}

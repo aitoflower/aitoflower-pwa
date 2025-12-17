@@ -2,10 +2,5 @@
 .lang-select .mat-select { color: inherit; min-width:140px; }
 .lang-select .mat-select-trigger { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
 .mat-select-value { color: inherit; }
-
-/* When the selector is placed inside the main nav, push it to the right so
-	it appears directly to the left of the login/Entrar controls. */
-.main-nav .lang-select { margin-left: auto; }
-
-/* Small spacing when used in the dashboard toolbar (to the left of profile) */
-.dashboard-toolbar .lang-select { margin-right:8px; }
+.main-nav .lang-select { margin-right: auto; }
+.dashboard-toolbar .lang-select { margin-left:8px; }

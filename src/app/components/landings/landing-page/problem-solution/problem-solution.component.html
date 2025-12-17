@@ -1,0 +1,30 @@
+
+    <!-- 2. Problem / Solution -->
+    <section class="problem-solution-section">
+        <div class="problem-block">
+            <div class="card-super-icon red">
+                <mat-icon>warning</mat-icon>
+            </div>
+            <h2>{{'LANDING.PROBLEM.TITLE' | translate}}</h2>
+            <p>{{'LANDING.PROBLEM.LEAD' | translate}}</p>
+            <ul class="problem-list">
+                <li><mat-icon>close</mat-icon> <span>{{'LANDING.PROBLEM.P1' | translate}}</span></li>
+                <li><mat-icon>close</mat-icon> <span>{{'LANDING.PROBLEM.P2' | translate}}</span></li>
+                <li><mat-icon>close</mat-icon> <span>{{'LANDING.PROBLEM.P3' | translate}}</span></li>
+            </ul>
+        </div>
+
+        <div class="solution-block">
+            <div class="card-super-icon green">
+                <mat-icon>check_circle</mat-icon>
+            </div>
+            <h2>{{'LANDING.SOLUTION.TITLE' | translate}}</h2>
+            <p class="solution-lead">{{'LANDING.SOLUTION.LEAD' | translate}}</p>
+            <p>{{'LANDING.SOLUTION.BODY' | translate}}</p>
+
+            <button mat-flat-button color="primary" class="solution-cta" routerLink="/dashboard">
+                <mat-icon>arrow_forward</mat-icon>
+                {{'LANDING.SOLUTION.CTA' | translate}}
+            </button>
+        </div>
+    </section>

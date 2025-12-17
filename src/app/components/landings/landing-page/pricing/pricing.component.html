@@ -1,0 +1,80 @@
+<section class="pricing-section" id="pricing">
+  <div class="pricing-header">
+    <h3 class="common-features-title">
+      <mat-icon class="highlight-icon">stars</mat-icon>
+      {{ 'LANDING.PRICING.INCLUDED' | translate }}
+    </h3>
+    <div class="common-features-grid">
+      <div class="common-item">
+        <mat-icon>calendar_today</mat-icon> {{ 'LANDING.PRICING.ITEMS.CALENDAR' | translate }}
+      </div>
+      <div class="common-item">
+        <mat-icon>menu_book</mat-icon> {{ 'LANDING.PRICING.ITEMS.WIKI' | translate }}
+      </div>
+      <div class="common-item">
+        <mat-icon>restaurant</mat-icon> {{ 'LANDING.PRICING.ITEMS.NUTRITION' | translate }}
+      </div>
+      <div class="common-item">
+        <mat-icon>cloud</mat-icon> {{ 'LANDING.PRICING.ITEMS.ALERTS' | translate }}
+      </div>
+      <!-- Chat IA removed from here -->
+    </div>
+  </div>
+
+  <!-- 1. Semilla (Free) -->
+  <div class="pricing-card">
+    <h3>{{ 'LANDING.PRICING.PLANS.SEED.TITLE' | translate }}</h3>
+    <div class="price-tag">{{ 'LANDING.PRICING.PLANS.SEED.PRICE' | translate }}</div>
+    <ul>
+      <li>1 Cultivo Activo</li>
+      <li>1 Planta</li>
+      <li>1 Revisión por cultivo</li>
+      <li>Historial 2 cultivos</li>
+    </ul>
+    <button mat-flat-button disabled="true">Solo Invitación</button>
+  </div>
+
+  <!-- 2. Cogollo -->
+  <div class="pricing-card featured">
+    <h3>{{ 'LANDING.PRICING.PLANS.BUD.TITLE' | translate }}</h3>
+    <div class="price-tag">{{ 'LANDING.PRICING.PLANS.BUD.PRICE' | translate }}</div>
+    <ul>
+      <li>1 Cultivo Activo</li>
+      <li>10 Plantas</li>
+      <li>1 Revisión sem/cultivo</li>
+      <li>1 Diag. Imagen/sem</li>
+      <li>Historial 10 cultivos</li>
+    </ul>
+    <button mat-flat-button disabled="true">Solo Invitación</button>
+  </div>
+
+  <!-- 3. Cosecha -->
+  <div class="pricing-card">
+    <h3>{{ 'LANDING.PRICING.PLANS.HARVEST.TITLE' | translate }}</h3>
+    <div class="price-tag">{{ 'LANDING.PRICING.PLANS.HARVEST.PRICE' | translate }}</div>
+    <ul>
+      <li>5 Cultivos Activos</li>
+      <li>50 Plantas</li>
+      <li>1 Revisión día/cultivo</li>
+      <li>1 Diag. Imagen/día</li>
+      <li>Historial 100 cultivos</li>
+    </ul>
+    <button mat-flat-button disabled="true">Solo Invitación</button>
+  </div>
+
+  <!-- 4. Granja (Enterprise) -->
+  <div class="pricing-card">
+    <h3>{{ 'LANDING.PRICING.PLANS.ENTERPRISE.TITLE' | translate }}</h3>
+    <div class="price-tag">{{ 'LANDING.PRICING.PLANS.ENTERPRISE.PRICE' | translate }}</div>
+    <ul>
+      <li>Cultivos Activos personalizados</li>
+      <li>Plantas personalizadas</li>
+      <li>Revisiones personalizadas</li>
+      <li>Diag. Imagen personalizados</li>
+      <li>Historial personalizado</li>
+    </ul>
+    <button mat-flat-button disabled="true">
+      {{ 'LANDING.PRICING.PLANS.INVITE_ONLY' | translate }}
+    </button>
+  </div>
+</section>

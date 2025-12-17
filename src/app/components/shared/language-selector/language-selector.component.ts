@@ -12,16 +12,12 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrls: ['./language-selector.component.css']
 })
 export class LanguageSelectorComponent {
-  // Languages: English + 4 large EU languages (adjustable)
   languages = [
     { code: 'en', label: 'English' },
     { code: 'es', label: 'Español' },
-    { code: 'fr', label: 'Français' },
-    { code: 'de', label: 'Deutsch' },
-    { code: 'it', label: 'Italiano' }
   ];
 
-  current = 'en';
+  current = 'es';
 
   constructor(private translate: TranslateService) {
     // Register languages and set default

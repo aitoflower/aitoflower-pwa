@@ -6,6 +6,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 import { LanguageSelectorComponent } from '../../../components/shared/language-selector/language-selector.component';
 import { TranslateModule } from '@ngx-translate/core';
+import { LogoComponent } from '../../shared/logo/logo.component';
+import { FooterComponent } from '../../shared/footer/footer.component';
+import { NavigatorComponent } from "../../shared/navigator/navigator.component";
 
 @Component({
   selector: 'app-b2b-landing-page',
@@ -15,10 +18,10 @@ import { TranslateModule } from '@ngx-translate/core';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    RouterLink,
-    LanguageSelectorComponent,
-    TranslateModule
-  ],
+    TranslateModule,
+    FooterComponent,
+    NavigatorComponent
+],
   templateUrl: './b2b-landing-page.component.html',
   styleUrls: ['./b2b-landing-page.component.css'],
 })

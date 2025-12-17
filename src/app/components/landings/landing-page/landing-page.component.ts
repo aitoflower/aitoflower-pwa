@@ -1,12 +1,20 @@
-import { Component, HostListener } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
+import { TranslateModule } from '@ngx-translate/core';
+import { PartnersComponent } from './partners/partners.component';
+import { HeroComponent } from "./hero/hero.component";
+import { ProblemSolutionComponent } from "./problem-solution/problem-solution.component";
+import { FeaturesComponent } from "./features/features.component";
+import { HowWhyComponent } from './how-why/how-why.component';
+import { PricingComponent } from './pricing/pricing.component';
+import { NewsletterComponent } from "./newsletter/newsletter.component";
+import { FooterComponent } from "../../shared/footer/footer.component";
+import { BackToTopComponent } from "./back-to-top/back-to-top.component";
+import { NavigatorComponent } from '../../shared/navigator/navigator.component';
 
-import { RouterLink } from '@angular/router';
-import { LanguageSelectorComponent } from '../../shared/language-selector/language-selector.component';
-import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-landing-page',
@@ -16,34 +24,21 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
     MatButtonModule,
     MatCardModule,
     MatIconModule,
-    RouterLink,
-    LanguageSelectorComponent,
     TranslateModule,
-  ],
+    PartnersComponent,
+    HeroComponent,
+    ProblemSolutionComponent,
+    FeaturesComponent,
+    HowWhyComponent,
+    PricingComponent,
+    NewsletterComponent,
+    FooterComponent,
+    BackToTopComponent,
+    NavigatorComponent
+],
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.css'],
 })
 export class LandingPageComponent {
-  showBackToTop = false;
-  isMobileMenuOpen = false;
-
-
-  constructor(private translate: TranslateService) {}
-
-  ngOnInit() {
-    console.log('currentLang', this.translate.currentLang);
-  }
-
-  toggleMobileMenu() {
-    this.isMobileMenuOpen = !this.isMobileMenuOpen;
-  }
-
-  @HostListener('window:scroll')
-  onWindowScroll() {
-    this.showBackToTop = window.scrollY > 300;
-  }
-
-  scrollToTop() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }
+  constructor() {}
 }

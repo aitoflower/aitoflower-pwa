@@ -1,0 +1,106 @@
+<app-navigator type="api"/>
+
+<section class="hero"  id="hero" @fadeUp>
+  <span class="badge">AITOFLOWER DATA API</span>
+
+  <h1>La forma más rápida de integrar datos web en tu producto</h1>
+
+  <p class="subtitle">
+    API de datos estructurados, actualizados y listos para producción.
+    Sin scraping. Sin mantenimiento. Sin sorpresas.
+  </p>
+
+  <div class="actions">
+    <button mat-raised-button color="primary">
+      Empieza a integrar hoy
+    </button>
+
+    <button mat-stroked-button color="primary">
+      Ver documentación
+    </button>
+  </div>
+</section>
+
+<section class="values"  id="values">
+  <mat-card
+    class="value-card"
+    *ngFor="let v of valueProps"
+    @fadeUp
+  >
+    <mat-icon>{{ v.icon }}</mat-icon>
+    <h3>{{ v.title }}</h3>
+    <p>{{ v.text }}</p>
+  </mat-card>
+</section>
+
+<section class="use-cases" id="use-cases" @fadeUp>
+  <h2>¿Para quién es esta API?</h2>
+
+  <ul>
+    <li *ngFor="let u of useCases">
+      <mat-icon>check_circle</mat-icon>
+      {{ u }}
+    </li>
+  </ul>
+</section>
+
+<section class="pricing" id="pricing" @fadeUp>
+  <h2>Planes adaptados al crecimiento de tu producto</h2>
+
+  <p class="pricing-subtitle">
+    Elige el plan que mejor encaje con tu fase actual.
+  </p>
+
+  <div class="pricing-grid">
+    <mat-card
+      class="pricing-card"
+      *ngFor="let plan of pricingPlans"
+      [class.highlight]="plan.highlight"
+    >
+      <h3>{{ plan.name }}</h3>
+      <p class="plan-desc">{{ plan.description }}</p>
+
+      <div class="price">
+        <span class="amount">{{ plan.price }}</span>
+        <span class="period">{{ plan.period }}</span>
+      </div>
+
+      <ul>
+        <li *ngFor="let f of plan.features">
+          <mat-icon>check</mat-icon>
+          {{ f }}
+        </li>
+      </ul>
+
+      <button
+        mat-raised-button
+        color="primary"
+        *ngIf="plan.name !== 'Enterprise'"
+      >
+        Empezar
+      </button>
+
+      <button
+        mat-stroked-button
+        color="primary"
+        *ngIf="plan.name === 'Enterprise'"
+      >
+        Contactar con ventas
+      </button>
+    </mat-card>
+  </div>
+</section>
+
+<section class="final-cta" @fadeUp>
+  <h2>Integra datos y céntrate en hacer crecer tu producto</h2>
+
+  <p>
+    La infraestructura ya está hecha. Tú solo consúmela.
+  </p>
+
+  <button mat-raised-button color="primary">
+    Crear cuenta
+  </button>
+</section>
+
+<app-footer/>

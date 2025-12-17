@@ -1,0 +1,31 @@
+<header class="landing-header">
+  <div class="header-container">
+    <app-logo [type]="this.type" />
+    <button mat-icon-button class="mobile-menu-toggle" (click)="toggleMobileMenu()">
+      <mat-icon>{{ isMobileMenuOpen ? 'close' : 'menu' }}</mat-icon>
+    </button>
+    <nav class="main-nav" [class.open]="isMobileMenuOpen">
+    @if(this.type==='default') {
+      <a href="#hero" (click)="toggleMobileMenu()">Inicio</a>
+      <a href="#features" (click)="toggleMobileMenu()">El Team</a>
+      <a href="#how-it-works" (click)="toggleMobileMenu()">Cómo va</a>
+      <a href="#pricing" (click)="toggleMobileMenu()">Precios</a>
+      <a routerLink="/b2b" (click)="toggleMobileMenu()">Empresas</a>
+      <button mat-stroked-button class="nav-cta" routerLink="/dashboard" (click)="toggleMobileMenu()">Entrar</button>
+    } @if(this.type==='b2b') {
+      <a href="#b2b-solutions" (click)="$event.preventDefault(); scrollToSection('b2b-solutions'); toggleMobileMenu()">Soluciones</a>
+      <a href="#b2b-pricing" (click)="$event.preventDefault(); scrollToSection('b2b-pricing'); toggleMobileMenu()" >Planes</a>
+      <a routerLink="/" (click)="toggleMobileMenu()">AIToFlower</a>
+      <button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Acceso Partner</button>
+    } @if(this.type==='api') {
+      <a href="#hero" (click)="$event.preventDefault(); scrollToSection('hero'); toggleMobileMenu()">Inicio</a>
+      <a href="#values" (click)="$event.preventDefault(); scrollToSection('values'); toggleMobileMenu()">Valores</a>
+      <a href="#use-cases" (click)="$event.preventDefault(); scrollToSection('use-cases'); toggleMobileMenu()">Casos de Uso</a>
+      <a href="#pricing" (click)="$event.preventDefault(); scrollToSection('pricing'); toggleMobileMenu()">Precios</a>
+      <a routerLink="/" (click)="toggleMobileMenu()">AIToFlower</a>
+      <button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Acceso API</button>
+    }
+    </nav>
+    <app-language-selector></app-language-selector>
+  </div>
+</header>

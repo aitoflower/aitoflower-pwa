@@ -1,0 +1,34 @@
+/* 7. Footer */
+/* Wait, was numbering off in previous file? It said 8. Footer. Fixing label here for consistency in CSS */
+.main-footer {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+    color: #666;
+    background: #0a0a0a;
+}
+
+.footer-links a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.2s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.legal-disclaimer {
+    margin: 30px auto;
+    font-size: 0.8rem;
+    color: #424242;
+    max-width: 600px;
+    line-height: 1.4;
+}
+
+.copyright {
+    margin-top: 20px;
+    color: #666;
+}
