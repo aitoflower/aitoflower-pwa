@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/aitoflower-pwa",
+    "public": "dist/aitoflower-pwa/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
