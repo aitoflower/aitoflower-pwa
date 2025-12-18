@@ -3,12 +3,9 @@ import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterLink } from '@angular/router';
-import { LanguageSelectorComponent } from '../../../components/shared/language-selector/language-selector.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { LogoComponent } from '../../shared/logo/logo.component';
-import { FooterComponent } from '../../shared/footer/footer.component';
-import { NavigatorComponent } from "../../shared/navigator/navigator.component";
+import { FooterComponent } from '../../components/shared/footer/footer.component';
+import { NavigatorComponent } from "../../components/shared/navigator/navigator.component";
 
 @Component({
   selector: 'app-b2b-landing-page',

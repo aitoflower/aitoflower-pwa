@@ -4,8 +4,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { animate, style, transition, trigger } from '@angular/animations';
-import { NavigatorComponent } from "../../shared/navigator/navigator.component";
-import { FooterComponent } from "../../shared/footer/footer.component";
+import { NavigatorComponent } from "../../components/shared/navigator/navigator.component";
+import { FooterComponent } from "../../components/shared/footer/footer.component";
 
 @Component({
   selector: 'app-api-landing',

@@ -7,8 +7,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card'; // Added for login card
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { AuthService } from '../services/auth.service';
-import { LanguageSelectorComponent } from '../components/shared/language-selector/language-selector.component';
+import { AuthService } from '../../services/auth.service';
+import { LanguageSelectorComponent } from '../../components/shared/language-selector/language-selector.component';
 
 @Component({
     selector: 'app-dashboard',

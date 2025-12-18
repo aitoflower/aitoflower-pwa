@@ -11,9 +11,9 @@ import { FeaturesComponent } from "./features/features.component";
 import { HowWhyComponent } from './how-why/how-why.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { NewsletterComponent } from "./newsletter/newsletter.component";
-import { FooterComponent } from "../../shared/footer/footer.component";
+import { FooterComponent } from "../../components/shared/footer/footer.component";
 import { BackToTopComponent } from "./back-to-top/back-to-top.component";
-import { NavigatorComponent } from '../../shared/navigator/navigator.component';
+import { NavigatorComponent } from '../../components/shared/navigator/navigator.component';
 
 
 @Component({
