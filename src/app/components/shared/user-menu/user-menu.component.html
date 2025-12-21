@@ -1,0 +1,35 @@
+  <!-- User Menu -->
+  <!-- Check if user is logged in -->
+  @if(authService.isLoggedIn()) {
+    <!-- When user is logged in -->
+    <!-- User Menu Button -->
+    <button mat-icon-button
+      [matMenuTriggerFor]="menuUser"
+      aria-label="{{ 'APP.MENU.USER.TITLE' | translate }}"
+      title="{{ 'APP.MENU.USER.TITLE' | translate }}">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+    <!-- User Menu Options -->
+    <mat-menu #menuUser="matMenu">
+      <!-- Iterate over User Menu Options -->
+      @for(button of userMenuButtons; track button) {
+        <button mat-menu-item
+          aria-label="{{ button.label | translate }}"
+          title="{{ button.label | translate }}"
+          (click)="button.action()"
+          routerLink="button.link" >
+          <mat-icon>{{ button.icon }}</mat-icon> {{ button.label | translate }}
+        </button>
+      }
+    </mat-menu>
+  } @else {
+    <!-- When user is not logged in -->
+    <!-- Login Button -->
+    <button mat-button
+      aria-label="{{ 'APP.MENU.USER.LOGIN' | translate }}"
+      title="{{ 'APP.MENU.USER.LOGIN' | translate }}"
+      color="primary"
+      (click)="login()">
+      {{ 'APP.MENU.USER.LOGIN' | translate }}
+    </button>
+  }

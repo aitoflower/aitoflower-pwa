@@ -1,4 +1,4 @@
-<app-navigator type="api"/>
+<app-navigator [type]="themeOption"/>
 
 <section class="hero"  id="hero" @fadeUp>
   <span class="badge">AITOFLOWER DATA API</span>
@@ -11,13 +11,16 @@
   </p>
 
   <div class="actions">
+    <a href="/data-api#newsletter">
     <button mat-raised-button color="primary">
       Empieza a integrar hoy
     </button>
-
+</a>
+    <a href="/data-api#newsletter">
     <button mat-stroked-button color="primary">
       Ver documentación
     </button>
+</a>
   </div>
 </section>
 
@@ -72,6 +75,7 @@
         </li>
       </ul>
 
+    <a href="/data-api#newsletter">
       <button
         mat-raised-button
         color="primary"
@@ -79,7 +83,8 @@
       >
         Empezar
       </button>
-
+    </a>
+    <a href="/data-api#newsletter">
       <button
         mat-stroked-button
         color="primary"
@@ -87,6 +92,7 @@
       >
         Contactar con ventas
       </button>
+    </a>
     </mat-card>
   </div>
 </section>
@@ -102,5 +108,6 @@
     Crear cuenta
   </button>
 </section>
-
+<!-- Newsletter Section -->
+<app-newsletter/>
 <app-footer/>

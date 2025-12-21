@@ -1,6 +1,26 @@
 {
   "APP": {
-    "TITLE": "AIToFlower"
+    "TITLE": "AIToFlower",
+    "MENU": {
+      "USER": {
+        "TITLE": "Menu de usuario",
+        "PROFILE": "Perfil",
+        "SETTINGS": "Ajustes",
+        "LOGOUT": "Salir",
+        "LOGIN": "Acceder"
+      }
+    },
+    "SIDENAV": {
+      "OPEN": "Abrir menú lateral",
+      "CLOSE": "Cerrar menú lateral",
+      "NAV": {
+        "DASHBOARD": "Panel",
+        "CALENDAR": "Calendario",
+        "NUTRITION": "Nutrición",
+        "WIKI": "Wiki",
+        "ALERTS": "Alertas Clima"
+      }
+    }
   },
   "HEADER": {
     "LANGUAGE": "Idioma",
@@ -105,7 +125,7 @@
       "TITLE": "¡No te quedes fuera!",
       "LEAD": "El acceso es limitado. Déjanos tu email y te avisamos cuando abramos plazas o lancemos betas.",
       "PLACEHOLDER": "Tu mejor email...",
-      "CTA": "Avísame 🚀"
+      "CTA": "Avísame"
     },
     "FOOTER": {
       "TERMS": "Términos",

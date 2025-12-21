@@ -9,7 +9,7 @@ import { TranslateService } from '@ngx-translate/core';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('aitoflower-pwa');
+  protected readonly title = signal('AIToFlower');
 
   constructor(private translate: TranslateService,
   private router: Router) {

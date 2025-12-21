@@ -1,0 +1,12 @@
+.dashboard-toolbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  border-bottom: 1px solid var(--mat-progress-bar-active-indicator-color);
+}
+
+.spacer {
+    flex: 1 1 auto;
+}

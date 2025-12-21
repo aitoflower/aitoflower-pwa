@@ -1,47 +1,31 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
-import { MatListModule } from '@angular/material/list';
-import { MatCardModule } from '@angular/material/card'; // Added for login card
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
-import { LanguageSelectorComponent } from '../../components/shared/language-selector/language-selector.component';
+import { ToolbarComponent } from '../../components/shared/toolbar/toolbar.component';
+import { SidenavListComponent } from '../../components/shared/sidenav-list/sidenav-list.component';
+import { FooterComponent } from "../../components/shared/footer/footer.component";
+import { SidenavService } from '../../services/sidenav.service';
+import { ThemeService } from '../../services/theme.service';
+import { ThemeOptions } from '../../interfaces/theme-options.enum';
+import { Title } from '@angular/platform-browser';
 
 @Component({
-    selector: 'app-dashboard',
-    standalone: true,
-    imports: [
-        CommonModule,
-        MatSidenavModule,
-        MatToolbarModule,
-        MatIconModule,
-        MatButtonModule,
-        MatListModule,
-        MatCardModule,
-        RouterLink,
-        RouterOutlet,
-        LanguageSelectorComponent
-    ],
-    templateUrl: './dashboard.component.html',
-    styleUrls: ['./dashboard.component.css']
+  selector: 'app-dashboard',
+  standalone: true,
+  imports: [CommonModule, MatSidenavModule, RouterOutlet, ToolbarComponent, SidenavListComponent, FooterComponent],
+  templateUrl: './dashboard.component.html',
+  styleUrls: ['./dashboard.component.css'],
 })
-export class DashboardComponent implements OnInit {
-    authService = inject(AuthService);
-    lastLogin: Date | null = null;
-
-    ngOnInit() {
-        this.lastLogin = this.authService.getLastLogin();
-    }
-
-    login() {
-        this.authService.login();
-        this.lastLogin = this.authService.getLastLogin(); // Update local ref
-    }
-
-    logout() {
-        this.authService.logout();
-    }
+export class DashboardComponent {
+  themeOption: ThemeOptions = ThemeOptions.DEFAULT;
+  authService = inject(AuthService);
+  sidenavService = inject(SidenavService);
+  themeService = inject(ThemeService);
+  titleService = inject(Title);
+  constructor() {
+    this.themeService.toggleTheme(this.themeOption);
+    this.titleService.setTitle('AIToFlower');
+  }
 }

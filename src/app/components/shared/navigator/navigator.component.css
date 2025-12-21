@@ -55,10 +55,6 @@
     transition: color 0.2s;
 }
 
-.main-nav a:hover {
-    color: #00e676;
-    /* Neon hover */
-}
 
 .nav-cta {
     border-color: rgba(255, 255, 255, 0.2) !important;

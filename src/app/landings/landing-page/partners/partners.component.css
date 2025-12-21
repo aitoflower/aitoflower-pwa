@@ -90,6 +90,7 @@
 }
 
 .b2b-cta {
+    cursor: pointer;
     border-color: #b388ff !important;
     color: #b388ff !important;
     height: 48px !important;
@@ -99,10 +100,11 @@
     display: flex !important;
     align-items: center !important;
     gap: 8px !important;
+    background: rgba(101, 31, 255, 0.1) !important;
 }
 
 .b2b-cta:hover {
-    background: rgba(101, 31, 255, 0.1) !important;
+    background: rgba(101, 31, 255, 0.2) !important;
 }
 
 .b2b-visual {

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -6,6 +6,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { TranslateModule } from '@ngx-translate/core';
 import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { NavigatorComponent } from "../../components/shared/navigator/navigator.component";
+import { Title } from '@angular/platform-browser';
+import { ThemeOptions } from '../../interfaces/theme-options.enum';
+import { ThemeService } from '../../services/theme.service';
+import { NewsletterComponent } from '../../components/core/newsletter/newsletter.component';
 
 @Component({
   selector: 'app-b2b-landing-page',
@@ -17,12 +21,20 @@ import { NavigatorComponent } from "../../components/shared/navigator/navigator.
     MatIconModule,
     TranslateModule,
     FooterComponent,
-    NavigatorComponent
+    NavigatorComponent,
+    NewsletterComponent
 ],
   templateUrl: './b2b-landing-page.component.html',
   styleUrls: ['./b2b-landing-page.component.css'],
 })
 export class B2bLandingPageComponent implements OnInit {
+  themeOption: ThemeOptions = ThemeOptions.B2B;
+  themeService = inject(ThemeService);
+  titleService = inject(Title);
+  constructor() {
+    this.themeService.toggleTheme(this.themeOption);
+    this.titleService.setTitle('AIToFlower B2B');
+  }
   ngOnInit() {
     window.scrollTo(0, 0);
   }

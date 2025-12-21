@@ -6,6 +6,7 @@ import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
 import { LogoComponent } from "../logo/logo.component";
+import { ThemeOptions } from '../../../interfaces/theme-options.enum';
 
 @Component({
   selector: 'app-navigator',
@@ -23,7 +24,7 @@ import { LogoComponent } from "../logo/logo.component";
   styleUrls: ['./navigator.component.css']
 })
 export class NavigatorComponent implements OnInit {
-  @Input() type: 'default' | 'b2b' | 'bo' | 'api' = 'default';
+  @Input() type: ThemeOptions = ThemeOptions.DEFAULT;
   isMobileMenuOpen = false;
   constructor() {}
   ngOnInit() {}

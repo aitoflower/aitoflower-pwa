@@ -1,0 +1,10 @@
+<mat-toolbar class="dashboard-toolbar">
+  <app-sidenav-button/>
+  <app-logo [type]="type"/>
+  <span class="spacer"></span>
+  @if(!authService.isLoggedIn()) {
+    <app-language-selector></app-language-selector>
+    <span class="spacer"></span>
+  }
+  <app-user-menu />
+</mat-toolbar>

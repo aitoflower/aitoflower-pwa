@@ -6,14 +6,16 @@
     <p class="hero-subtitle">{{ 'LANDING.HERO.SUBTITLE' | translate }}</p>
 
     <div class="cta-group">
-      <button mat-flat-button color="primary" class="cta-primary" routerLink="/dashboard">
-        <mat-icon>rocket_launch</mat-icon>
-        {{ 'LANDING.HERO.CTA_PRIMARY' | translate }}
-      </button>
-      <button mat-stroked-button class="cta-secondary">
-        <mat-icon>play_circle_outline</mat-icon>
-        {{ 'LANDING.HERO.CTA_SECONDARY' | translate }}
-      </button>
+      <a href="#newsletter">
+        <button mat-flat-button color="primary" class="cta-primary" routerLink="/#newsletter">
+          <mat-icon>rocket_launch</mat-icon>
+          {{ 'LANDING.HERO.CTA_PRIMARY' | translate }}
+        </button>
+      </a>
+        <button mat-stroked-button class="cta-secondary">
+          <mat-icon>play_circle_outline</mat-icon>
+          {{ 'LANDING.HERO.CTA_SECONDARY' | translate }}
+        </button>
     </div>
   </div>
 
