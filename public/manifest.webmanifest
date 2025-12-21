@@ -1,9 +1,14 @@
 {
-  "name": "aitoflower-pwa",
-  "short_name": "aitoflower-pwa",
+  "name": "AIToFlower",
+  "short_name": "AIToFlower",
   "display": "standalone",
-  "scope": "./",
-  "start_url": "./",
+  "scope": "./dashboard/",
+  "start_url": "./dashboard/home",
+  "orientation": "portrait",
+  "dir": "ltr",
+  "lang": "es",
+  "theme_color": "#00e875",
+  "background_color": "#0a0a0a",
   "icons": [
     {
       "src": "icons/icon-72x72.png",

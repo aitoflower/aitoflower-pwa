@@ -1,16 +1,19 @@
 
     <!-- Newsletter / Waiting List Section -->
+
+
+<div id="newsletter">
     <section class="newsletter-section">
         <div class="newsletter-content">
             <mat-icon class="newsletter-icon">mark_email_unread</mat-icon>
             <h2>{{'LANDING.NEWSLETTER.TITLE' | translate}}</h2>
             <p>{{'LANDING.NEWSLETTER.LEAD' | translate}}</p>
-
             <form class="newsletter-form" (submit)="$event.preventDefault()">
-                <input type="email" placeholder="Tu mejor email..." required class="newsletter-input">
+                <input type="email" placeholder="email@example.com" required class="newsletter-input">
                 <button mat-flat-button color="primary" type="submit" class="newsletter-btn">
                     {{'LANDING.NEWSLETTER.CTA' | translate}}
                 </button>
             </form>
         </div>
     </section>
+</div>

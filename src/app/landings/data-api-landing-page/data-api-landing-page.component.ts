@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -6,6 +6,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { animate, style, transition, trigger } from '@angular/animations';
 import { NavigatorComponent } from "../../components/shared/navigator/navigator.component";
 import { FooterComponent } from "../../components/shared/footer/footer.component";
+import { Title } from '@angular/platform-browser';
+import { ThemeOptions } from '../../interfaces/theme-options.enum';
+import { SidenavService } from '../../services/sidenav.service';
+import { ThemeService } from '../../services/theme.service';
+import { NewsletterComponent } from '../../components/core/newsletter/newsletter.component';
 
 @Component({
   selector: 'app-api-landing',
@@ -16,21 +21,21 @@ import { FooterComponent } from "../../components/shared/footer/footer.component
     MatCardModule,
     MatIconModule,
     NavigatorComponent,
-    FooterComponent
+    FooterComponent,
+    NewsletterComponent
 ],
-  templateUrl: './api-landing-page.component.html',
-  styleUrls: ['./api-landing-page.component.css'],
+  templateUrl: './data-api-landing-page.component.html',
+  styleUrls: ['./data-api-landing-page.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush,
-  animations: [
-    trigger('fadeUp', [
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(14px)' }),
-        animate('450ms ease-out', style({ opacity: 1, transform: 'none' }))
-      ])
-    ])
-  ]
 })
-export class ApiLandingPageComponent {
+export class DataApiLandingPageComponent {
+  themeOption: ThemeOptions = ThemeOptions.DATA_API;
+  themeService = inject(ThemeService);
+  titleService = inject(Title);
+  constructor() {
+    this.themeService.toggleTheme(this.themeOption);
+    this.titleService.setTitle('AIToFlower Data API');
+  }
 
   valueProps = [
     {

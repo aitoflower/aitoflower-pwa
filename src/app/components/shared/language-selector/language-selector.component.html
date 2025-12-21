@@ -1,5 +1,8 @@
 <div class="lang-select">
-  <mat-select [(value)]="current" (selectionChange)="change($event.value)" disableRipple>
-    <mat-option *ngFor="let l of languages" [value]="l.code">{{ l.label }}</mat-option>
+  <mat-icon>language</mat-icon>
+  <mat-select [(value)]="current" (selectionChange)="change($event.value)" disableRipple >
+    @for(language of languages; track language) {
+    <mat-option class="lang-option" [value]="language.code">{{ language.label }}</mat-option>
+    }
   </mat-select>
 </div>

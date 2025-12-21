@@ -1,5 +1,5 @@
 <div class="landing-container b2b-theme">
-  <app-navigator type="b2b"/>
+  <app-navigator [type]="themeOption"/>
 
   <!-- 1. Hero Section -->
   <section class="hero-section">
@@ -12,14 +12,18 @@
       </p>
 
       <div class="cta-group">
+    <a href="/b2b#newsletter">
         <button mat-flat-button color="primary" class="cta-primary">
           <mat-icon>business_center</mat-icon>
           Crear Cuenta
         </button>
+    </a>
+        <a href="/b2b#newsletter">
         <button mat-stroked-button class="cta-secondary">
           <mat-icon>login</mat-icon>
           Entrar
         </button>
+    </a>
       </div>
     </div>
     <!-- Visual placeholder for dashboard mockup -->
@@ -82,7 +86,10 @@
         <li>Catálogo de Productos</li>
         <li>Estadísticas Públicas</li>
       </ul>
+
+    <a href="/b2b#newsletter">
       <button mat-flat-button class="btn-basic">Registrar Marca</button>
+    </a>
     </div>
 
     <!-- Paid Tier -->
@@ -96,9 +103,14 @@
         <li>Informes de Rendimiento (Data)</li>
         <li>Smart Ads en la App</li>
       </ul>
+
+    <a href="/b2b#newsletter">
       <button mat-flat-button color="primary">Contactar Ventas</button>
+    </a>
     </div>
   </section>
+  <!-- Newsletter Section -->
+  <app-newsletter/>
 
   <app-footer/>
 </div>

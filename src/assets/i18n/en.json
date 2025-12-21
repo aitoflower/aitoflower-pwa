@@ -1,6 +1,26 @@
 {
   "APP": {
-    "TITLE": "AIToFlower"
+    "TITLE": "AIToFlower",
+    "MENU": {
+      "USER": {
+        "TITLE": "User Menu",
+        "PROFILE": "Profile",
+        "SETTINGS": "Settings",
+        "LOGOUT": "Logout",
+        "LOGIN": "Login"
+      }
+    },
+    "SIDENAV": {
+      "OPEN": "Abrir menú lateral",
+      "CLOSE": "Cerrar menú lateral",
+      "NAV": {
+        "DASHBOARD": "Panel",
+        "CALENDAR": "Calendario",
+        "NUTRITION": "Nutrición",
+        "WIKI": "Wiki",
+        "ALERTS": "Alertas Clima"
+      }
+    }
   },
   "HEADER": {
     "LANGUAGE": "Language",
@@ -69,7 +89,7 @@
       "PLANS": { "SEED": { "TITLE": "Seed", "PRICE": "FREE" }, "BUD": { "TITLE": "Bud", "PRICE": "€4.20 /mo" }, "HARVEST": { "TITLE": "Harvest", "PRICE": "€9.90 /mo" }, "ENTERPRISE": { "TITLE": "Farm", "PRICE": "Contact" }, "INVITE_ONLY": "By invite only" }
     },
     "B2B": { "CTA": "Partner with AIToFlower" },
-    "NEWSLETTER": { "TITLE": "Don't miss out!", "LEAD": "Access is limited. Leave your email and we'll notify you when we open spots or launch betas.", "PLACEHOLDER": "Your best email...", "CTA": "Notify me 🚀" },
+    "NEWSLETTER": { "TITLE": "Don't miss out!", "LEAD": "Access is limited. Leave your email and we'll notify you when we open spots or launch betas.", "PLACEHOLDER": "Your best email...", "CTA": "Notify me" },
     "FOOTER": { "TERMS": "Terms", "PRIVACY": "Privacy", "CONTACT": "Contact us", "DISCLAIMER_LINE1": "AIToFlower helps you, but you're the grower.", "DISCLAIMER_LINE2": "Grow responsibly and follow local laws." }
   }
 }

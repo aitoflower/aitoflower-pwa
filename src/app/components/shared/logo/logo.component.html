@@ -1,12 +1,12 @@
-<div class="logo">
-  AIToFlower
+<div class="logo" title="{{ 'APP.TITLE' | translate }}">
+  {{ 'APP.TITLE' | translate }}
   @if (this.type==='b2b') {
-    <span class="badge badge-b2b-nav">BUSINESS</span>
+    <span class="badge badge-b2b-nav" title="B2B">B2B</span>
   }
   @if (this.type==='bo') {
-    <span class="badge badge-bo-nav">BACKOFFICE</span>
+    <span class="badge badge-bo-nav" title="Backoffice">BACKOFFICE</span>
   }
-  @if (this.type==='api') {
-    <span class="badge badge-api-nav">API</span>
+  @if (this.type==='data-api') {
+    <span class="badge badge-data-api-nav" title="Data API">DATA API</span>
   }
 </div>

@@ -1,0 +1,20 @@
+<!-- Menu Button to toggle the sidenav -->
+@if(sidenavService.isSidenavOpen()) {
+<button
+  mat-icon-button
+  aria-label="{{ 'APP.SIDENAV.CLOSE' | translate }}"
+  title="{{ 'APP.SIDENAV.CLOSE' | translate }}"
+  (click)="sidenavService.closeSidenav()"
+>
+  <mat-icon>menu_open</mat-icon>
+</button>
+} @else {
+<button
+  mat-icon-button
+  aria-label="{{ 'APP.SIDENAV.OPEN' | translate }}"
+  title="{{ 'APP.SIDENAV.OPEN' | translate }}"
+  (click)="sidenavService.openSidenav()"
+>
+  <mat-icon>menu</mat-icon>
+</button>
+}

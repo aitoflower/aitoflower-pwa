@@ -10,20 +10,21 @@
       <a href="#features" (click)="toggleMobileMenu()">El Team</a>
       <a href="#how-it-works" (click)="toggleMobileMenu()">Cómo va</a>
       <a href="#pricing" (click)="toggleMobileMenu()">Precios</a>
-      <a routerLink="/b2b" (click)="toggleMobileMenu()">Empresas</a>
-      <button mat-stroked-button class="nav-cta" routerLink="/dashboard" (click)="toggleMobileMenu()">Entrar</button>
+      <a routerLink="/b2b" (click)="toggleMobileMenu()">B2B</a>
+      <a routerLink="/data-api" (click)="toggleMobileMenu()">Data API</a>
+      <!--button mat-stroked-button class="nav-cta" href="#newsletter" (click)="toggleMobileMenu()">Entrar</!--button-->
     } @if(this.type==='b2b') {
       <a href="#b2b-solutions" (click)="$event.preventDefault(); scrollToSection('b2b-solutions'); toggleMobileMenu()">Soluciones</a>
       <a href="#b2b-pricing" (click)="$event.preventDefault(); scrollToSection('b2b-pricing'); toggleMobileMenu()" >Planes</a>
       <a routerLink="/" (click)="toggleMobileMenu()">AIToFlower</a>
-      <button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Acceso Partner</button>
-    } @if(this.type==='api') {
+      <!--button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Acceso Partner</!--button-->
+    } @if(this.type==='data-api') {
       <a href="#hero" (click)="$event.preventDefault(); scrollToSection('hero'); toggleMobileMenu()">Inicio</a>
       <a href="#values" (click)="$event.preventDefault(); scrollToSection('values'); toggleMobileMenu()">Valores</a>
       <a href="#use-cases" (click)="$event.preventDefault(); scrollToSection('use-cases'); toggleMobileMenu()">Casos de Uso</a>
       <a href="#pricing" (click)="$event.preventDefault(); scrollToSection('pricing'); toggleMobileMenu()">Precios</a>
       <a routerLink="/" (click)="toggleMobileMenu()">AIToFlower</a>
-      <button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Acceso API</button>
+      <!--button mat-stroked-button class="nav-cta" (click)="toggleMobileMenu()">Acceso API</!--button-->
     }
     </nav>
     <app-language-selector></app-language-selector>

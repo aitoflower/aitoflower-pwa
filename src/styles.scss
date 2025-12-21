@@ -1,169 +1,121 @@
 // Custom Theming for Angular Material
 @use '@angular/material' as mat;
+@use '../src/assets/themes/default_theme-colors.scss';
+@use '../src/assets/themes/data-api_theme-colors.scss';
+@use '../src/assets/themes/b2b_theme-colors.scss';
+@use '../src/assets/themes/bo_theme-colors.scss';
 
 @include mat.core();
 
-// Create the theme object using Material 3 API with Standard Palettes
-// We will override the specific colors using CSS variables below
-$aitoflower-pwa-theme: mat.define-theme((color: (theme-type: dark),
-            typography: (brand-family: 'Roboto',
-                plain-family: 'Roboto',
-            ),
-            density: (scale: 0)));
+$aitoflower-default-theme: mat.define-theme(
+  (
+    color: (
+      primary: default_theme-colors.$primary-palette,
+      tertiary: default_theme-colors.$tertiary-palette,
+      theme-type: dark,
+    ),
+    typography: (
+      brand-family: 'Roboto',
+      plain-family: 'Roboto',
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+$aitoflower-data-api-theme: mat.define-theme(
+  (
+    color: (
+      primary: data-api_theme-colors.$primary-palette,
+      tertiary: data-api_theme-colors.$tertiary-palette,
+      theme-type: dark,
+    ),
+    typography: (
+      brand-family: 'Roboto',
+      plain-family: 'Roboto',
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+$aitoflower-b2b-theme: mat.define-theme(
+  (
+    color: (
+      primary: b2b_theme-colors.$primary-palette,
+      tertiary: b2b_theme-colors.$tertiary-palette,
+      theme-type: dark,
+    ),
+    typography: (
+      brand-family: 'Roboto',
+      plain-family: 'Roboto',
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
+$aitoflower-bo-theme: mat.define-theme(
+  (
+    color: (
+      primary: bo_theme-colors.$primary-palette,
+      tertiary: bo_theme-colors.$tertiary-palette,
+      theme-type: dark,
+    ),
+    typography: (
+      brand-family: 'Roboto',
+      plain-family: 'Roboto',
+    ),
+    density: (
+      scale: 0,
+    ),
+  )
+);
 
 // Include theme styles
-@include mat.all-component-themes($aitoflower-pwa-theme);
+@include mat.all-component-themes($aitoflower-default-theme);
+
+.default-theme {
+  @include mat.all-component-themes($aitoflower-default-theme);
+}
+.data-api-theme {
+  @include mat.all-component-themes($aitoflower-data-api-theme);
+}
+.b2b-theme {
+  @include mat.all-component-themes($aitoflower-b2b-theme);
+}
+.bo-theme {
+  @include mat.all-component-themes($aitoflower-bo-theme);
+}
 
 /* Global Styles */
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
-
 body {
-    margin: 0;
-    font-family: Roboto, "Helvetica Neue", sans-serif;
-    background-color: #0d0d0d;
-    color: #e0e0e0;
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+  background-color: #0d0d0d;
+  color: #e0e0e0;
+}
+.mat-pseudo-checkbox {
+  display: none !important;
 }
 
 /* Material Symbols Configuration */
 .material-symbols-outlined {
-    font-family: 'Material Symbols Outlined';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 1;
-    letter-spacing: normal;
-    text-transform: none;
-    display: inline-block;
-    white-space: nowrap;
-    word-wrap: normal;
-    direction: ltr;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* CSS Variable Overrides for Neon Green */
-:root {
-    /* Override Material 3 Primary Color Tokens - Neon Green */
-    --mat-sys-primary: #00e676;
-    --mat-sys-on-primary: #000000;
-    --mat-sys-primary-container: #00a854;
-    --mat-sys-on-primary-container: #000000;
-
-    /* Override Material 3 Secondary Color Tokens - Forest Green */
-    --mat-sys-secondary: #4caf50;
-    --mat-sys-on-secondary: #000000;
-    --mat-sys-secondary-container: #388e3c;
-    --mat-sys-on-secondary-container: #ffffff;
-
-    /* Override Material 3 Tertiary Color Tokens - Lime Green */
-    --mat-sys-tertiary: #8bc34a;
-    --mat-sys-on-tertiary: #000000;
-    --mat-sys-tertiary-container: #689f38;
-    --mat-sys-on-tertiary-container: #ffffff;
-
-    /* M2 Compat overrides if needed */
-    --mdc-theme-primary: #00e676;
-    --mdc-theme-on-primary: #000000;
-    --mdc-theme-secondary: #4caf50;
-    --mdc-theme-on-secondary: #000000;
-
-    /* Additional overrides to eliminate purple/magenta */
-    --mat-ripple-color: rgba(0, 230, 118, 0.1);
-    --mat-option-selected-state-label-text-color: #00e676;
-    --mat-option-hover-state-layer-color: rgba(0, 230, 118, 0.08);
-    --mat-option-focus-state-layer-color: rgba(0, 230, 118, 0.12);
-}
-
-/* Force all Material buttons to use green when they have color attribute */
-.mat-mdc-button.mat-primary,
-.mat-mdc-raised-button.mat-primary,
-.mat-mdc-flat-button.mat-primary,
-.mat-mdc-unelevated-button.mat-primary,
-.mat-mdc-stroked-button.mat-primary,
-.mat-mdc-icon-button.mat-primary,
-.mat-mdc-fab.mat-primary,
-.mat-mdc-mini-fab.mat-primary {
-    --mdc-text-button-label-text-color: #00e676 !important;
-    --mdc-filled-button-container-color: #00e676 !important;
-    --mdc-filled-button-label-text-color: #000000 !important;
-    --mdc-protected-button-container-color: #00e676 !important;
-    --mdc-outlined-button-label-text-color: #00e676 !important;
-    --mdc-outlined-button-outline-color: rgba(0, 230, 118, 0.5) !important;
-}
-
-/* Additional specific overrides for flat/unelevated buttons */
-.mat-mdc-unelevated-button.mat-primary,
-.mat-mdc-flat-button.mat-primary {
-    background-color: #00e676 !important;
-    color: #000000 !important;
-}
-
-.mat-mdc-unelevated-button.mat-primary .mdc-button__label,
-.mat-mdc-flat-button.mat-primary .mdc-button__label {
-    color: #000000 !important;
-}
-
-/* Ripple effects */
-.mat-mdc-button.mat-primary .mat-ripple-element,
-.mat-mdc-unelevated-button.mat-primary .mat-ripple-element,
-.mat-mdc-flat-button.mat-primary .mat-ripple-element {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-.mat-mdc-button.mat-primary .mat-mdc-button-persistent-ripple,
-.mat-mdc-unelevated-button.mat-primary .mat-mdc-button-persistent-ripple,
-.mat-mdc-flat-button.mat-primary .mat-mdc-button-persistent-ripple {
-    background-color: transparent !important;
-}
-
-.mat-mdc-button.mat-primary:hover .mat-mdc-button-persistent-ripple,
-.mat-mdc-unelevated-button.mat-primary:hover .mat-mdc-button-persistent-ripple,
-.mat-mdc-flat-button.mat-primary:hover .mat-mdc-button-persistent-ripple {
-    background-color: rgba(0, 0, 0, 0.08) !important;
-}
-
-/* Override any accent/secondary colored elements */
-.mat-accent,
-[color="accent"] {
-    --mdc-checkbox-selected-checkmark-color: #000000 !important;
-    --mdc-checkbox-selected-icon-color: #4caf50 !important;
-    --mdc-radio-selected-icon-color: #4caf50 !important;
-    --mdc-slider-active-track-color: #4caf50 !important;
-    --mdc-slider-handle-color: #4caf50 !important;
-}
-
-/* Fix button touch target purple color */
-.mat-mdc-button-touch-target {
-    background-color: transparent !important;
-}
-
-.mat-mdc-button:hover .mat-mdc-button-touch-target,
-.mat-mdc-icon-button:hover .mat-mdc-button-touch-target {
-    background-color: rgba(0, 230, 118, 0.08) !important;
-}
-
-/* Custom Scrollbar for dark theme */
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: #1a1a1a;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #333;
-    border-radius: 5px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #00e676;
-}
-
-
-strong {
-    color: #00e676;
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
