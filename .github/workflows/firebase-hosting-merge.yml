@@ -5,7 +5,6 @@ on:
       - main
 
 jobs:
-  # Añadimos esta dependencia para que espere a que Semantic Release actualice el package.json
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -15,8 +14,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: 'npm' # <--- AHORA SÍ USA CACHÉ
+          node-version: 22
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
