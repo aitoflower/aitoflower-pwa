@@ -1,3 +1,5 @@
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/aitoflower/aitoflower-pwa?style=flat-square)
+
 # Aitoflower Pwa
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.3.
