@@ -1,0 +1,18 @@
+.env-badge {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 9999;
+  pointer-events: none;
+  background: #ffcc00; // Amarillo para LOCAL
+  color: black;
+
+  &.preview {
+    background: #03a9f4; // Azul para PREVIEW
+    color: white;
+  }
+}
