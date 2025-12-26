@@ -1,14 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
+import { EnvironmentService } from './services/environment.service';
 
 @Component({
   selector: 'app-root',
   imports: [RouterOutlet],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.scss'
 })
 export class App {
+  environmentService = inject(EnvironmentService);
   protected readonly title = signal('AIToFlower');
 
   constructor(private translate: TranslateService,

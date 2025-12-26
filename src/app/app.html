@@ -1,1 +1,6 @@
 <router-outlet></router-outlet>
+@if (environmentService.currentEnv !== 'PROD') {
+  <div class="env-badge" [class.preview]="environmentService.isPreview()">
+    {{ environmentService.currentEnv }}
+  </div>
+}
