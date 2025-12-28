@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/aitoflower/aitoflower-pwa/compare/v1.0.0...v1.1.0) (2025-12-28)
+
+
+### Features
+
+* security and profile ([12e170c](https://github.com/aitoflower/aitoflower-pwa/commit/12e170c0e3c212ff86bd29e8655a84ba2ffccce8))
+
 # 1.0.0 (2025-12-27)
 
 
