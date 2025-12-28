@@ -1,0 +1,43 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.user-card {
+  max-width: 450px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+}
+
+.avatar-container {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 2px solid;
+
+  .profile-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.code-text {
+  font-size: 0.85rem;
+  word-break: break-all;
+}
+
+.provider-badge {
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+mat-divider {
+  margin: 10px 0;
+}

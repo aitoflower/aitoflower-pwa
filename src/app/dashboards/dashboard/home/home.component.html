@@ -1,6 +1,6 @@
 <div class="home-container">
     <!-- Login Banner for Non-Authenticated Users -->
-    <div *ngIf="!authService.isLoggedIn()" class="login-banner">
+    <div *ngIf="!authService.user()" class="login-banner">
         <div class="banner-content">
             <mat-icon>info</mat-icon>
             <div class="banner-text">
@@ -12,7 +12,7 @@
     </div>
 
     <!-- Welcome Banner for Logged In Users -->
-    <div *ngIf="authService.isLoggedIn()" class="welcome-banner">
+    <div *ngIf="authService.user()" class="welcome-banner">
         <mat-icon>history</mat-icon>
         <p *ngIf="lastLogin">Hola de nuevo! Tu última visita fue el {{ lastLogin | date:'medium' }}</p>
         <p *ngIf="!lastLogin">¡Bienvenido por primera vez!</p>
@@ -29,11 +29,11 @@
                 <mat-card-title>Mis Cultivos</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <div *ngIf="!authService.isLoggedIn()" class="restricted-overlay">
+                <div *ngIf="!authService.user()" class="restricted-overlay">
                     <mat-icon>lock</mat-icon>
                     <p>Inicia sesión para ver tus cultivos</p>
                 </div>
-                <div *ngIf="authService.isLoggedIn()">
+                <div *ngIf="authService.user()">
                     <p>No tienes cultivos activos aún.</p>
                 </div>
             </mat-card-content>
@@ -53,11 +53,11 @@
                 <mat-card-title>Estadísticas</mat-card-title>
             </mat-card-header>
             <mat-card-content>
-                <div *ngIf="!authService.isLoggedIn()" class="restricted-overlay">
+                <div *ngIf="!authService.user()" class="restricted-overlay">
                     <mat-icon>lock</mat-icon>
                     <p>Inicia sesión para ver estadísticas</p>
                 </div>
-                <div *ngIf="authService.isLoggedIn()">
+                <div *ngIf="authService.user()">
                     <p>Sin datos disponibles aún.</p>
                 </div>
             </mat-card-content>

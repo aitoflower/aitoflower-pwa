@@ -176,7 +176,7 @@ export class WarehouseComponent {
     }
 
     login() {
-        this.authService.login();
+        this.authService.loginWithGoogle();
     }
 
     addItem() {

@@ -16,7 +16,8 @@ export const routes: Routes = [
         children: [
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', loadComponent: () => import('./dashboards/dashboard/home/home.component').then(m => m.HomeComponent) },
-            { path: 'warehouse', loadComponent: () => import('./dashboards/dashboard/warehouse/warehouse.component').then(m => m.WarehouseComponent) }
+            { path: 'warehouse', loadComponent: () => import('./dashboards/dashboard/warehouse/warehouse.component').then(m => m.WarehouseComponent) },
+            { path: 'profile', loadComponent: () => import('./components/core/profile/profile.component').then(m => m.ProfileComponent) },
         ]
     },
     // B2B Routes

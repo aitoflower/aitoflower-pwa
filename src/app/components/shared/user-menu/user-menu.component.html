@@ -1,13 +1,13 @@
   <!-- User Menu -->
   <!-- Check if user is logged in -->
-  @if(authService.isLoggedIn()) {
+  @if(authService.user()) {
     <!-- When user is logged in -->
     <!-- User Menu Button -->
     <button mat-icon-button
       [matMenuTriggerFor]="menuUser"
       aria-label="{{ 'APP.MENU.USER.TITLE' | translate }}"
       title="{{ 'APP.MENU.USER.TITLE' | translate }}">
-      <mat-icon>account_circle</mat-icon>
+      <img class="profile-picture" [src]="authService.user()?.photoURL" alt="User Profile Picture" />
     </button>
     <!-- User Menu Options -->
     <mat-menu #menuUser="matMenu">
@@ -17,7 +17,7 @@
           aria-label="{{ button.label | translate }}"
           title="{{ button.label | translate }}"
           (click)="button.action()"
-          routerLink="button.link" >
+          routerLink="{{button.link}}" >
           <mat-icon>{{ button.icon }}</mat-icon> {{ button.label | translate }}
         </button>
       }

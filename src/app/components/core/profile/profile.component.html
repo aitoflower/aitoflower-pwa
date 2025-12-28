@@ -1,0 +1,60 @@
+<div class="profile-container">
+@if(authService.user()) {
+
+  <mat-card class="user-card" appearance="outlined">
+    <mat-card-header>
+      <div mat-card-avatar class="avatar-container">
+        <img [src]="authService.user()!.photoURL" alt="Foto de {{ authService.user()!.displayName }}" class="profile-img">
+      </div>
+      <mat-card-title>{{ authService.user()!.displayName }}</mat-card-title>
+      <mat-card-subtitle>
+        <mat-chip-set>
+          <mat-chip [color]="authService.user()!.emailVerified ? 'primary' : 'warn'" selected>
+            {{ authService.user()!.emailVerified ? 'Verificado' : 'Pendiente de verificación' }}
+          </mat-chip>
+        </mat-chip-set>
+      </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content>
+      <mat-list>
+        <h3 mat-subheader>Información de cuenta</h3>
+
+        <mat-list-item>
+          <mat-icon matListItemIcon>email</mat-icon>
+          <div matListItemTitle>Correo electrónico</div>
+          <div matListItemLine>{{ authService.user()!.email }}</div>
+        </mat-list-item>
+
+        <mat-list-item>
+          <mat-icon matListItemIcon>fingerprint</mat-icon>
+          <div matListItemTitle>Identificador Único (UID)</div>
+          <div matListItemLine class="code-text">{{ authService.user()!.uid }}</div>
+        </mat-list-item>
+
+        <mat-divider></mat-divider>
+        <h3 mat-subheader>Seguridad y Acceso</h3>
+
+        <mat-list-item>
+          <mat-icon matListItemIcon>login</mat-icon>
+          <div matListItemTitle>Último inicio de sesión</div>
+          <div matListItemLine>{{ authService.user()!.metadata.lastSignInTime| date:'medium' }}</div>
+        </mat-list-item>
+
+        <mat-list-item>
+          <mat-icon matListItemIcon>account_tree</mat-icon>
+          <div matListItemTitle>Proveedor</div>
+          <div matListItemLine>
+            <span class="provider-badge">{{ authService.user()!.providerData[0].providerId }}</span>
+          </div>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+
+    <mat-card-actions align="end">
+      <button mat-button color="warn" (click)="authService.logout()">CERRAR SESIÓN</button>
+    </mat-card-actions>
+  </mat-card>
+}
+</div>
+

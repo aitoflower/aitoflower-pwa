@@ -2,7 +2,7 @@
   <app-sidenav-button/>
   <app-logo [type]="type"/>
   <span class="spacer"></span>
-  @if(!authService.isLoggedIn()) {
+  @if(!authService.user()) {
     <app-language-selector></app-language-selector>
     <span class="spacer"></span>
   }

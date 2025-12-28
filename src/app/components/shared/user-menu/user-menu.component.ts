@@ -24,13 +24,13 @@ import { RouterLink } from '@angular/router';
 export class UserMenuComponent {
   authService = inject(AuthService);
   userMenuButtons = [
-    { label: 'APP.MENU.USER.PROFILE', icon: 'account_circle', action: () => {}, link: '/profile' },
+    { label: 'APP.MENU.USER.PROFILE', icon: 'account_circle', action: () => {}, link: '/dashboard/profile' },
     { label: 'APP.MENU.USER.SETTINGS', icon: 'settings', action: () => {}, link: '/settings' },
     { label: 'APP.MENU.USER.LOGOUT', icon: 'logout', action: () => this.logout(), link: null },
   ];
 
   login() {
-    this.authService.login();
+    this.authService.loginWithGoogle();
   }
 
   logout() {

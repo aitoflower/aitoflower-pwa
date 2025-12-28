@@ -8,14 +8,14 @@
             </h1>
             <p class="subtitle">Gestiona tu inventario de productos de cultivo</p>
         </div>
-        <button mat-flat-button color="primary" (click)="addItem()" *ngIf="authService.isLoggedIn()">
+        <button mat-flat-button color="primary" (click)="addItem()" *ngIf="authService.user()">
             <mat-icon>add</mat-icon>
             Añadir Producto
         </button>
     </div>
 
     <!-- Login Warning for Guests -->
-    <div *ngIf="!authService.isLoggedIn()" class="login-warning">
+    <div *ngIf="!authService.user()" class="login-warning">
         <mat-icon>info</mat-icon>
         <p>Inicia sesión para gestionar tu almacén personal</p>
         <button mat-flat-button color="primary" (click)="login()">Iniciar Sesión</button>
@@ -102,12 +102,12 @@
             <mat-card-title>Inventario</mat-card-title>
         </mat-card-header>
         <mat-card-content>
-            <div *ngIf="!authService.isLoggedIn()" class="restricted-overlay">
+            <div *ngIf="!authService.user()" class="restricted-overlay">
                 <mat-icon>lock</mat-icon>
                 <p>Inicia sesión para ver tu inventario completo</p>
             </div>
 
-            <table mat-table [dataSource]="inventoryItems" class="inventory-table" *ngIf="authService.isLoggedIn()">
+            <table mat-table [dataSource]="inventoryItems" class="inventory-table" *ngIf="authService.user()">
 
                 <!-- Name Column -->
                 <ng-container matColumnDef="name">
@@ -165,7 +165,7 @@
                 <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
             </table>
 
-            <div *ngIf="authService.isLoggedIn() && inventoryItems.length === 0" class="empty-state">
+            <div *ngIf="authService.user() && inventoryItems.length === 0" class="empty-state">
                 <mat-icon>inventory_2</mat-icon>
                 <h3>Almacén vacío</h3>
                 <p>Añade tus primeros productos para empezar a gestionar tu inventario</p>

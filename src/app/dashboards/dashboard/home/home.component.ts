@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
     }
 
     login() {
-        this.authService.login();
+        this.authService.loginWithGoogle();
         this.lastLogin = this.authService.getLastLogin();
     }
 }
