@@ -1,0 +1,336 @@
+{
+  "AROMAS": {
+    "WOODY": {
+      "name": "Amaderado",
+      "description": "Aroma cálido y natural que recuerda a madera seca y corteza. Presenta un carácter orgánico estable y ligeramente áspero, fácil de identificar."
+    },
+    "PINE": {
+      "name": "Pino",
+      "description": "Fresco, resinoso y penetrante, similar al olor de un bosque de coníferas. Su carácter balsámico lo hace muy reconocible."
+    },
+    "CEDAR": {
+      "name": "Cedro",
+      "description": "Madera aromática con un matiz seco y elegante. Ofrece un perfil limpio y ligeramente especiado, típico de maderas nobles."
+    },
+    "SANDALWOOD": {
+      "name": "Sándalo",
+      "description": "Dulce, cremoso y suave, con un carácter cálido y envolvente. Evoca maderas finas con un toque perfumado."
+    },
+    "RESINOUS": {
+      "name": "Resinoso",
+      "description": "Aroma denso y pegajoso que recuerda a savia fresca. Presenta un carácter aromático profundo y ligeramente dulce."
+    },
+    "BALSAMIC": {
+      "name": "Balsámico",
+      "description": "Dulce y refrescante, con un matiz suave y medicinal. Su carácter aromático es estable y ligeramente envolvente."
+    },
+    "OAK": {
+      "name": "Roble",
+      "description": "Madera tostada con un perfil seco y firme. Ofrece un matiz aromático profundo y ligeramente áspero."
+    },
+
+    "CITRUS": {
+      "name": "Cítrico",
+      "description": "Fresco y chispeante, con notas que recuerdan a piel de limón o naranja. Su carácter volátil lo hace muy fácil de reconocer."
+    },
+    "LEMON": {
+      "name": "Limón",
+      "description": "Ácido y brillante, similar a ralladura de limón. Presenta un perfil fresco y vivo que destaca rápidamente."
+    },
+    "ORANGE": {
+      "name": "Naranja",
+      "description": "Dulce y jugoso, con un matiz suave que recuerda a fruta madura. Su aroma es cálido y agradable."
+    },
+    "GRAPEFRUIT": {
+      "name": "Pomelo",
+      "description": "Cítrico con un toque amargo y fresco. Ofrece un perfil vivo y ligeramente seco, fácil de distinguir."
+    },
+    "LIME": {
+      "name": "Lima",
+      "description": "Cítrico verde, ácido y refrescante. Su carácter ligero y volátil aporta una sensación brillante."
+    },
+    "TANGY": {
+      "name": "Ácido",
+      "description": "Aroma vivo y punzante, con una sensación agria característica. Presenta un perfil fresco y energético."
+    },
+    "SOUR": {
+      "name": "Agrio",
+      "description": "Notas intensas y agudas que evocan fruta verde. Su carácter es vivo y ligeramente áspero."
+    },
+
+    "BERRY": {
+      "name": "Frutos rojos",
+      "description": "Dulce y afrutado, similar a bayas maduras. Presenta un perfil jugoso y suave, fácil de identificar."
+    },
+    "GRAPE": {
+      "name": "Uva",
+      "description": "Dulzor afrutado que recuerda a uva morada o mosto. Su aroma es redondo y ligeramente denso."
+    },
+    "APPLE": {
+      "name": "Manzana",
+      "description": "Fresco y crujiente, similar a manzana verde. Ofrece un perfil limpio y ligeramente ácido."
+    },
+    "PEACH": {
+      "name": "Melocotón",
+      "description": "Dulce y jugoso, con un matiz suave y afrutado. Presenta un carácter cálido y agradable."
+    },
+    "APRICOT": {
+      "name": "Albaricoque",
+      "description": "Fruta dulce y carnosa con un toque meloso. Su aroma es suave y ligeramente perfumado."
+    },
+    "PLUM": {
+      "name": "Ciruela",
+      "description": "Dulzor profundo con un matiz ligeramente ácido. Presenta un perfil afrutado y maduro."
+    },
+    "LYCHEE": {
+      "name": "Lichi",
+      "description": "Dulce, floral y exótico, con un carácter jugoso. Su aroma es suave y muy reconocible."
+    },
+    "FRUITY": {
+      "name": "Afrutado",
+      "description": "Mezcla dulce y fresca de frutas maduras. Presenta un carácter aromático vivo y agradable."
+    },
+
+    "SWEET": {
+      "name": "Dulce",
+      "description": "Aroma suave y azucarado, con un carácter ligero y agradable. Evoca sensaciones cálidas y amables."
+    },
+    "HONEY": {
+      "name": "Miel",
+      "description": "Dulzor cálido y espeso, similar a miel natural. Presenta un perfil suave y envolvente."
+    },
+    "SUGAR": {
+      "name": "Azúcar",
+      "description": "Dulce simple y directo, como azúcar blanco. Su aroma es ligero y limpio."
+    },
+    "CANDY": {
+      "name": "Caramelo",
+      "description": "Dulce intenso que recuerda a golosinas. Presenta un perfil aromático brillante y juvenil."
+    },
+    "AMBER": {
+      "name": "Ámbar",
+      "description": "Dulce, cálido y resinoso, con un matiz profundo. Su aroma es suave y ligeramente perfumado."
+    },
+
+    "FLORAL": {
+      "name": "Floral",
+      "description": "Suave y perfumado, similar a flores frescas. Presenta un carácter delicado y ligeramente dulce."
+    },
+    "ROSE": {
+      "name": "Rosa",
+      "description": "Dulce y elegante, típico de pétalos frescos. Su aroma es suave y perfumado."
+    },
+    "LAVENDER": {
+      "name": "Lavanda",
+      "description": "Herbal y floral, con un matiz calmante. Presenta un perfil aromático suave y equilibrado."
+    },
+    "LILAC": {
+      "name": "Lila",
+      "description": "Dulce y suave, con un carácter floral ligero. Evoca flores delicadas y perfumadas."
+    },
+    "JASMINE": {
+      "name": "Jazmín",
+      "description": "Floral intenso, dulce y exótico. Su aroma es profundo y muy característico."
+    },
+    "VIOLET": {
+      "name": "Violeta",
+      "description": "Dulce y empolvado, con un matiz floral delicado. Presenta un carácter suave y elegante."
+    },
+
+    "HERBAL": {
+      "name": "Herbal",
+      "description": "Verde y aromático, como mezcla de hierbas frescas. Presenta un perfil limpio y natural."
+    },
+    "GRASSY": {
+      "name": "Hierba fresca",
+      "description": "Aroma verde y vivo, similar a césped recién cortado. Su carácter es ligero y brillante."
+    },
+    "GREEN": {
+      "name": "Verde",
+      "description": "Fresco y vegetal, como hojas trituradas. Presenta un perfil aromático natural y suave."
+    },
+    "TEA": {
+      "name": "Té",
+      "description": "Suave y herbal, similar a infusiones ligeras. Ofrece un carácter aromático delicado y equilibrado."
+    },
+    "HAY": {
+      "name": "Heno",
+      "description": "Seco y vegetal, como hierba curada. Presenta un perfil suave y ligeramente cálido."
+    },
+    "EUCALYPTUS": {
+      "name": "Eucalipto",
+      "description": "Fresco y mentolado, con un matiz balsámico. Su aroma es penetrante y limpio."
+    },
+
+    "MINTY": {
+      "name": "Mentolado",
+      "description": "Fresco y penetrante, con sensación casi fría. Presenta un carácter aromático vivo y estimulante."
+    },
+    "MENTHOL": {
+      "name": "Mentol",
+      "description": "Muy fresco y volátil, con un matiz intenso. Su aroma es limpio y fácilmente reconocible."
+    },
+    "SPEARMINT": {
+      "name": "Hierbabuena",
+      "description": "Dulce y refrescante, más suave que la menta. Presenta un perfil aromático ligero y agradable."
+    },
+
+    "SPICY": {
+      "name": "Especiado",
+      "description": "Caliente y aromático, mezcla de especias suaves. Presenta un carácter vivo y ligeramente picante."
+    },
+    "PEPPERY": {
+      "name": "Pimienta",
+      "description": "Picante y seco, similar a pimienta negra. Su aroma es agudo y penetrante."
+    },
+    "CLOVES": {
+      "name": "Clavo",
+      "description": "Dulce y especiado, con un matiz cálido. Presenta un perfil aromático profundo."
+    },
+    "CINNAMON": {
+      "name": "Canela",
+      "description": "Dulce y cálida, muy aromática. Su perfil es suave y envolvente."
+    },
+    "GINGER": {
+      "name": "Jengibre",
+      "description": "Picante y fresco, con un matiz ligeramente cítrico. Presenta un carácter vivo y estimulante."
+    },
+    "ANISE": {
+      "name": "Anís",
+      "description": "Dulce y herbal, similar al regaliz. Su aroma es suave y perfumado."
+    },
+
+    "PUNGENT": {
+      "name": "Picante",
+      "description": "Aroma fuerte y penetrante, con un carácter agudo. Presenta un perfil aromático intenso y directo."
+    },
+    "SHARP": {
+      "name": "Punzante",
+      "description": "Agudo y vivo, se percibe rápidamente. Su carácter aromático es claro y directo."
+    },
+    "ACRID": {
+      "name": "Acre",
+      "description": "Seco y áspero, con una sensación irritante. Presenta un perfil fuerte y marcado."
+    },
+
+    "EARTHY": {
+      "name": "Terroso",
+      "description": "Aroma profundo y orgánico que recuerda a suelo seco y minerales. Presenta un carácter estable y natural."
+    },
+    "MUSKY": {
+      "name": "Almizclado",
+      "description": "Profundo y ligeramente animal, con un matiz dulce. Su aroma es denso y envolvente."
+    },
+    "MUSTY": {
+      "name": "Húmedo",
+      "description": "Olor apagado y rancio, similar a material guardado. Presenta un carácter denso y poco volátil."
+    },
+    "MOSSY": {
+      "name": "Musgo",
+      "description": "Verde y suave, como vegetación adherida a piedra. Presenta un perfil natural y ligeramente apagado."
+    },
+    "PATCHOULI": {
+      "name": "Pachuli",
+      "description": "Terroso y dulce, con un matiz herbal profundo. Su aroma es cálido y envolvente."
+    },
+    "TOBACCO": {
+      "name": "Tabaco",
+      "description": "Seco y cálido, similar a hojas curadas. Presenta un perfil aromático firme y característico."
+    },
+    "LEATHER": {
+      "name": "Cuero",
+      "description": "Fuerte y cálido, como cuero natural. Su aroma es profundo y ligeramente áspero."
+    },
+
+    "FUEL": {
+      "name": "Combustible",
+      "description": "Químico y penetrante, similar a vapores ligeros. Presenta un perfil volátil y marcado."
+    },
+    "GAS": {
+      "name": "Gas",
+      "description": "Aroma químico, seco y punzante. Su carácter es fuerte y volátil."
+    },
+    "DIESEL": {
+      "name": "Diésel",
+      "description": "Combustible intenso con un matiz seco. Presenta un perfil aromático fuerte y reconocible."
+    },
+    "KEROSENE": {
+      "name": "Queroseno",
+      "description": "Químico y afilado, similar a combustible limpio. Su aroma es penetrante y volátil."
+    },
+    "CHEMICAL": {
+      "name": "Químico",
+      "description": "Aroma sintético y fuerte, con un carácter seco. Presenta un perfil volátil y directo."
+    },
+    "SOLVENT": {
+      "name": "Disolvente",
+      "description": "Olor fuerte y volátil, similar a limpiadores. Presenta un carácter penetrante y marcado."
+    },
+
+    "CHEESY": {
+      "name": "Queso",
+      "description": "Fermentado y cremoso, con un matiz intenso. Su aroma es fuerte y ligeramente salado."
+    },
+    "SKUNK": {
+      "name": "Skunk",
+      "description": "Muy penetrante, con un carácter animal y herbáceo. Presenta un perfil fuerte y distintivo."
+    },
+    "SULFUROUS": {
+      "name": "Sulfurado",
+      "description": "Olor fuerte y áspero, similar a compuestos sulfurosos. Presenta un perfil intenso y marcado."
+    },
+    "FUNKY": {
+      "name": "Funky",
+      "description": "Aroma intenso y poco convencional, con matices fermentados y un toque animal suave. Presenta un carácter complejo y distintivo."
+    },
+    "STINKY": {
+      "name": "Apestoso",
+      "description": "Olor fuerte y desagradable, con un carácter muy penetrante. Presenta un perfil aromático agresivo."
+    },
+    "ROTTEN": {
+      "name": "Podrido",
+      "description": "Aroma a fruta muy pasada o materia degradada. Presenta un carácter fuerte y fácilmente reconocible."
+    },
+    "SWEATY": {
+      "name": "Sudor",
+      "description": "Animal y salado, similar a sudor seco. Presenta un perfil aromático intenso y marcado."
+    },
+
+    "MEDICINAL": {
+      "name": "Medicinal",
+      "description": "Aroma limpio y químico, similar a ungüentos suaves. Presenta un carácter fresco y penetrante."
+    },
+    "CAMPHOR": {
+      "name": "Alcanfor",
+      "description": "Fresco y penetrante, con un matiz balsámico. Su aroma es fuerte y volátil."
+    },
+    "WAXY": {
+      "name": "Cera",
+      "description": "Suave y neutro, similar a cera o parafina. Presenta un perfil aromático ligero y estable."
+    },
+    "OILY": {
+      "name": "Aceitoso",
+      "description": "Graso y denso, con una sensación pesada. Presenta un perfil aromático suave y persistente."
+    },
+    "MUSTARD": {
+      "name": "Mostaza",
+      "description": "Picante y sulfuroso, similar a mostaza fuerte. Presenta un carácter aromático agudo y penetrante."
+    }
+  },
+  "AROMA_CATEGORIES" : {
+    "Woody": "Amaderado",
+    "Citrus": "Cítrico",
+    "Fruit": "Afrutado",
+    "Sweet": "Dulce",
+    "Floral": "Floral",
+    "Herbal": "Herbal",
+    "Spicy": "Especiado",
+    "Cheesy": "Queso",
+    "Chemical": "Químico",
+    "Gas": "Combustible",
+    "Earthy": "Terroso"
+  },
+  "COMMON" : {
+    "NONE": "Ninguno"
+  }
+}

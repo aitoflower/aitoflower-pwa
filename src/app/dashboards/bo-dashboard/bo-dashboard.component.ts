@@ -5,7 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from '../../components/shared/footer/footer.component';
 import { SidenavListComponent } from '../../components/shared/sidenav-list/sidenav-list.component';
 import { ToolbarComponent } from '../../components/shared/toolbar/toolbar.component';
-import { ThemeOptions } from '../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../model/enums/theme-options.enum';
 import { SidenavService } from '../../services/sidenav.service';
 import { ThemeService } from '../../services/theme.service';
 import { Title } from '@angular/platform-browser';

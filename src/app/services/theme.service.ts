@@ -1,5 +1,5 @@
 import { Injectable, signal } from "@angular/core";
-import { ThemeOptions } from "../interfaces/theme-options.enum";
+import { ThemeOptions } from "../model/enums/theme-options.enum";
 
 @Injectable({
   providedIn: 'root'

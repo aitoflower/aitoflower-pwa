@@ -8,13 +8,14 @@ import { SidenavListComponent } from '../../components/shared/sidenav-list/siden
 import { FooterComponent } from "../../components/shared/footer/footer.component";
 import { SidenavService } from '../../services/sidenav.service';
 import { ThemeService } from '../../services/theme.service';
-import { ThemeOptions } from '../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../model/enums/theme-options.enum';
 import { Title } from '@angular/platform-browser';
+import { BreadcrumbComponent } from '../../components/shared/breadcrumb/breadcrumb.component';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, MatSidenavModule, RouterOutlet, ToolbarComponent, SidenavListComponent, FooterComponent],
+  imports: [CommonModule, MatSidenavModule, RouterOutlet, ToolbarComponent, SidenavListComponent, FooterComponent, BreadcrumbComponent],
   templateUrl: './dashboard.component.html',
   styleUrls: ['./dashboard.component.css'],
 })

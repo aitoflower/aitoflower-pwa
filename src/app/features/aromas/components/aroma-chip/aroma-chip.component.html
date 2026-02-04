@@ -1,0 +1,11 @@
+<mat-chip
+  style="background-color: {{ aromaUI.color }} ;"
+  class="aroma-chip"
+  matTooltip="{{ 'AROMAS.' + aromaUI.label + '.name' | translate }}: {{ 'AROMAS.' + aromaUI.label + '.description' | translate }}"
+>
+  @if (this.chipType != 'text') {
+  <mat-icon class="aroma-icon">{{ aromaUI.icon }}</mat-icon>
+  } @if (this.chipType != 'icon') {
+  <span class="aroma-label">{{ 'AROMAS.' + aromaUI.label + '.name' | translate }}</span>
+  }
+</mat-chip>

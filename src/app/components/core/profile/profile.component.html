@@ -8,11 +8,7 @@
       </div>
       <mat-card-title>{{ authService.user()!.displayName }}</mat-card-title>
       <mat-card-subtitle>
-        <mat-chip-set>
-          <mat-chip [color]="authService.user()!.emailVerified ? 'primary' : 'warn'" selected>
-            {{ authService.user()!.emailVerified ? 'Verificado' : 'Pendiente de verificación' }}
-          </mat-chip>
-        </mat-chip-set>
+        {{ authService.user()!.email }}
       </mat-card-subtitle>
     </mat-card-header>
 
@@ -21,15 +17,15 @@
         <h3 mat-subheader>Información de cuenta</h3>
 
         <mat-list-item>
-          <mat-icon matListItemIcon>email</mat-icon>
-          <div matListItemTitle>Correo electrónico</div>
-          <div matListItemLine>{{ authService.user()!.email }}</div>
-        </mat-list-item>
-
-        <mat-list-item>
           <mat-icon matListItemIcon>fingerprint</mat-icon>
           <div matListItemTitle>Identificador Único (UID)</div>
           <div matListItemLine class="code-text">{{ authService.user()!.uid }}</div>
+        </mat-list-item>
+
+        <mat-list-item>
+          <mat-icon matListItemIcon>domino_mask</mat-icon>
+          <div matListItemTitle>Roles</div>
+          <div matListItemLine>{{ authService.claims()!.roles| json}}</div>
         </mat-list-item>
 
         <mat-divider></mat-divider>

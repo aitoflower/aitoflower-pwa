@@ -1,4 +1,4 @@
-import { ThemeOptions } from './../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../model/enums/theme-options.enum';
 import { Component, inject } from '@angular/core';
 import { SidenavService } from '../../services/sidenav.service';
 import { ThemeService } from '../../services/theme.service';

@@ -14,7 +14,7 @@
     <!-- Welcome Banner for Logged In Users -->
     <div *ngIf="authService.user()" class="welcome-banner">
         <mat-icon>history</mat-icon>
-        <p *ngIf="lastLogin">Hola de nuevo! Tu última visita fue el {{ lastLogin | date:'medium' }}</p>
+        <p *ngIf="lastLogin">Hola de nuevo! Tu última visita fue el {{ lastLogin() | date:'medium' }}</p>
         <p *ngIf="!lastLogin">¡Bienvenido por primera vez!</p>
     </div>
 

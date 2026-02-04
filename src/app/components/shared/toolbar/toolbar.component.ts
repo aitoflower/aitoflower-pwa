@@ -11,7 +11,7 @@ import { TranslateModule } from '@ngx-translate/core';
 import { LogoComponent } from "../logo/logo.component";
 import { UserMenuComponent } from '../user-menu/user-menu.component';
 import { SidenavButtonComponent } from '../sidenav-button/sidenav-button.component';
-import { ThemeOptions } from '../../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../../model/enums/theme-options.enum';
 
 @Component({
   selector: 'app-toolbar',

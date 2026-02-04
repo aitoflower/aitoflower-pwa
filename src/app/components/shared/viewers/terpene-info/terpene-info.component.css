@@ -1,0 +1,56 @@
+.terpene-data {
+  margin: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.terpene-image,
+.terpene-info {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.terpene-info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+      height: -webkit-fill-available;
+}
+
+mat-chip {
+  margin: 4px;
+}
+
+.aromas-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 1em;
+}
+
+.aroma-chips-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+/* Pantallas pequeñas (Angular Material breakpoint típico) */
+@media (max-width: 768px) {
+  .terpene-data {
+    flex-direction: column;
+  }
+
+  .terpene-image,
+  .terpene-info {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

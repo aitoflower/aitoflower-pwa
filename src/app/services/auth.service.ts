@@ -1,56 +1,85 @@
-import { computed, Injectable, signal } from '@angular/core';
-import { Auth, GoogleAuthProvider, signInWithPopup, signOut, User } from '@angular/fire/auth';
+import { Injectable, computed, signal } from '@angular/core';
+import {
+  Auth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signOut,
+  User,
+} from '@angular/fire/auth';
+import { FirebaseClaims } from '../model/interfaces/firebase-claims.interface';
 
-@Injectable({
-    providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
 export class AuthService {
+  // ─────────────────────────────
+  // Estado base
+  // ─────────────────────────────
+  private readonly _user = signal<User | null>(null);
+  private readonly _token = signal<string | null>(null);
+  private readonly _claims = signal<FirebaseClaims | null>(null);
 
-  // Signal que mantiene el usuario actual
-  private _user = signal<User | null>(null);
-  user = computed(() => this._user());
+  // ─────────────────────────────
+  // Estado expuesto (computed)
+  // ─────────────────────────────
+  readonly user = computed(() => this._user());
+  readonly token = computed(() => this._token());
+  readonly claims = computed(() => this._claims());
 
-  // Signal que mantiene el token JWT
-  private _token = signal<string | null>(null);
-  token = computed(() => this._token());
+  readonly roles = computed<string[]>(() => {
+    const claims = this._claims();
+    return Array.isArray(claims?.roles) ? claims.roles : [];
+  });
+
+  readonly isAdmin = computed(() => this.roles().includes('admin'));
 
   constructor(private auth: Auth) {
-    // Escucha cambios en el estado de autenticación
-    auth.onAuthStateChanged(async user => {
-      this._user.set(user);
-      if (user) {
-        const idToken = await user.getIdToken();
-        this._token.set(idToken);
-      } else {
-        this._token.set(null);
+    this.auth.onAuthStateChanged(user => {
+      if (!user) {
+        this.clearSession();
+        return;
       }
+      this.loadSession(user);
     });
   }
 
-  // Login con Google
-  async loginWithGoogle() {
+  // ─────────────────────────────
+  // Auth
+  // ─────────────────────────────
+  async loginWithGoogle(): Promise<void> {
     try {
       const provider = new GoogleAuthProvider();
-      const result = await signInWithPopup(this.auth, provider);
-      this._user.set(result.user);
-      const idToken = await result.user.getIdToken();
-      this._token.set(idToken);
+      const { user } = await signInWithPopup(this.auth, provider);
+      await this.loadSession(user);
     } catch (err) {
-      console.error('Login Google failed:', err);
-      this._user.set(null);
-      this._token.set(null);
+      console.error('Login Google failed', err);
+      this.clearSession();
     }
   }
 
-  // Logout
-  async logout() {
+  async logout(): Promise<void> {
     await signOut(this.auth);
-    this._user.set(null);
-    this._token.set(null);
+    this.clearSession();
   }
 
-  getLastLogin(): Date | null {
-    const user = this._user();
-    return user ? user.metadata.lastSignInTime ? new Date(user.metadata.lastSignInTime) : null : null;
+  // ─────────────────────────────
+  // Session
+  // ─────────────────────────────
+  private async loadSession(user: User): Promise<void> {
+    this._user.set(user);
+    const tokenResult = await user.getIdTokenResult(true);
+    this._token.set(tokenResult.token);
+    this._claims.set(tokenResult.claims as FirebaseClaims);
+  }
+
+  private clearSession(): void {
+    this._user.set(null);
+    this._token.set(null);
+    this._claims.set(null);
+  }
+
+  // ─────────────────────────────
+  // Utils (uso imperativo)
+  // ─────────────────────────────
+  hasRole(role: string): boolean {
+    return this.roles().includes(role);
   }
 }

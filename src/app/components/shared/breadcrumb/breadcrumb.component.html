@@ -1,0 +1,25 @@
+@if (breadcrumbs.length) {
+<nav class="breadcrumb-container">
+  <ng-container *ngFor="let bc of breadcrumbs; let last = last">
+    @if (!last) {
+    <a class="breadcrumb-item" [routerLink]="bc.url">
+      @if (bc.icon) {
+        <mat-icon>{{ bc.icon }}</mat-icon>
+      }
+      {{ bc.label | translate }}
+    </a>
+    }
+    @if (last) {
+    <span class="breadcrumb-item active">
+      @if (bc.icon) {
+      <mat-icon>{{ bc.icon }}</mat-icon>
+      }
+      {{ bc.label | translate }}
+    </span>
+    }
+    @if(!last){
+    <mat-icon class="separator">chevron_right</mat-icon>
+    }
+  </ng-container>
+</nav>
+}

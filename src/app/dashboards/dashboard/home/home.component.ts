@@ -1,4 +1,4 @@
-import { Component, OnInit, inject } from '@angular/core';
+import { Component, OnInit, computed, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
@@ -12,16 +12,27 @@ import { AuthService } from '../../../services/auth.service';
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent  {
     authService = inject(AuthService);
-    lastLogin: Date | null = null;
 
-    ngOnInit() {
-        this.lastLogin = this.authService.getLastLogin();
-    }
+  // ─────────────────────────────
+  // Signals / computed
+  // ─────────────────────────────
+  readonly user = this.authService.user;
 
-    login() {
-        this.authService.loginWithGoogle();
-        this.lastLogin = this.authService.getLastLogin();
-    }
+  readonly lastLogin = computed(() => {
+    const u = this.user();
+    return u?.metadata.lastSignInTime
+      ? new Date(u.metadata.lastSignInTime)
+      : null;
+  });
+
+  // ─────────────────────────────
+  // Métodos
+  // ─────────────────────────────
+  login(): void {
+    this.authService.loginWithGoogle();
+    // No hace falta setear lastLogin manualmente
+  }
+
 }

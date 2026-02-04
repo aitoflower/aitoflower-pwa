@@ -12,7 +12,7 @@ import { FooterComponent } from "../../components/shared/footer/footer.component
 import { BackToTopComponent } from "./back-to-top/back-to-top.component";
 import { NavigatorComponent } from '../../components/shared/navigator/navigator.component';
 import { Title } from '@angular/platform-browser';
-import { ThemeOptions } from '../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../model/enums/theme-options.enum';
 import { ThemeService } from '../../services/theme.service';
 
 

@@ -6,7 +6,7 @@ import { RouterLink } from '@angular/router';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageSelectorComponent } from '../language-selector/language-selector.component';
 import { LogoComponent } from "../logo/logo.component";
-import { ThemeOptions } from '../../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../../model/enums/theme-options.enum';
 
 @Component({
   selector: 'app-navigator',

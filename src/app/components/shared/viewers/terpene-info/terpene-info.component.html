@@ -1,0 +1,67 @@
+<mat-card>
+  <mat-card-header>
+    <mat-card-title>
+      {{ terpene.name }}
+    </mat-card-title>
+    <mat-card-subtitle>{{ terpene.type }} - {{ terpene.id }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-tab-group>
+      <mat-tab label="Chem info">
+        <div class="terpene-data">
+          <div class="terpene-image">
+            <app-terpene-3d [terpene]="terpene"></app-terpene-3d>
+          </div>
+          <div class="terpene-info">
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title><mat-icon>weight</mat-icon> Molecular Weight</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <p>{{ terpene.molecularWeight }} g/mol</p>
+              </mat-card-content>
+            </mat-card>
+            <mat-card>
+              <mat-card-header>
+                <mat-card-title><mat-icon>heat</mat-icon> Boiling Point</mat-card-title>
+              </mat-card-header>
+              <mat-card-content>
+                <p>{{ terpene.boilingPoint }} ºC</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="Flavors">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title><mat-icon>dining</mat-icon> Flavors</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            @for (flavor of terpene.flavors; track flavor) {
+            <mat-chip>{{ flavor }}</mat-chip>
+            }
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+      <mat-tab label="Aromas">
+        <div class="aromas-wrapper">
+          <app-aroma-chip-list [aromas]="terpene.aromas" />
+          <app-aroma-sunburst [aromas]="terpene.aromas" />
+        </div>
+      </mat-tab>
+      <mat-tab label="Effects">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title><mat-icon>medical_services</mat-icon> Effects</mat-card-title>
+          </mat-card-header>
+          <mat-card-content>
+            @for (effect of terpene.effects; track effect) {
+            <mat-chip>{{ effect }}</mat-chip>
+            }
+          </mat-card-content>
+        </mat-card>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>

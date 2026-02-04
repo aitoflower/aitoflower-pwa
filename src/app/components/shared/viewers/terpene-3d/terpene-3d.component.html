@@ -1,0 +1,6 @@
+<div class="viewer-wrapper">
+  <span class="scientific-name">{{ terpene.scientificName }}</span>
+  <div #container class="mol-container"></div>
+  <span class="molecular-formula" [innerHTML]="renderFormula(terpene.molecularFormula)"> </span>
+  <span class="smiles">{{ terpene.smiles }}</span>
+</div>

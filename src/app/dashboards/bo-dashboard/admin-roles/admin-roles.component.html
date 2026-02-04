@@ -1,0 +1,47 @@
+<div class="admin-roles-container">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Gestión de Roles de Usuario</mat-card-title>
+      <mat-card-subtitle>Asigna o revoca roles a usuarios específicos</mat-card-subtitle>
+      <div mat-card-avatar class="mat-card-avatar"><mat-icon color="warn">domino_mask</mat-icon></div>
+    </mat-card-header>
+    <mat-card-content>
+      <!-- FORMULARIO PARA EL UID-->
+      <mat-form-field appearance="outline" class="full">
+        <mat-label>UID del usuario</mat-label>
+        <input
+          matInput
+          aria-label="uid"
+          [value]="userUid()"
+          (input)="onUidInput($any($event.target).value)"
+          required
+        />
+        <mat-hint>Introduce el UID del usuario y pulsa la lupa para gestionar sus roles</mat-hint>
+        <button mat-icon-button matSuffix (click)="search()" [disabled]="!userUid || _loading()">
+          <mat-icon>search</mat-icon>
+        </button>
+      </mat-form-field>
+      @if (_loading()) {
+      <!-- CARGANDO ROLES -->
+      <p>Cargando roles…</p>
+      } @else { @if (_rolesLoaded()) {
+      <!-- LISTA DE ROLES -->
+      <h3>Roles actuales del usuario:</h3>
+      <mat-chip-listbox multiple [compareWith]="compareRoles" (change)="onRolesChanged($event)">
+        @for (role of availableRoles; track role) {
+        <mat-chip-option
+          [value]="role.role"
+          [selected]="userRoles().includes(role.role)"
+          [disabled]="isDisabled()(role.role)"
+        >
+          <mat-icon matChipAvatar>{{ role.icon }}</mat-icon>
+          {{ role.label }}
+        </mat-chip-option>
+        }
+      </mat-chip-listbox>
+      <br />
+      <button mat-raised-button color="primary" (click)="submit()">Guardar roles</button>
+      } }
+    </mat-card-content>
+  </mat-card>
+</div>

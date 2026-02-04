@@ -30,8 +30,6 @@ export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideRouter(routes),
-    provideAnimationsAsync(),
-
     provideHttpClient(withInterceptorsFromDi()),
     {
       provide: HTTP_INTERCEPTORS,
@@ -51,6 +49,7 @@ export const appConfig: ApplicationConfig = {
     // Provide ngx-translate module configured to load JSON files from assets/i18n
     importProvidersFrom(
       TranslateModule.forRoot({
+        defaultLanguage: 'es',
         loader: {
           provide: TranslateLoader,
           useFactory: HttpLoaderFactory,

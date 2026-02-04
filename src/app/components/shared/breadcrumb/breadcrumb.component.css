@@ -1,0 +1,32 @@
+  .breadcrumb-container {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      gap: 4px;
+      border: 1px solid var(--mat-progress-bar-active-indicator-color);
+      margin: 1rem;
+      padding: 1rem;
+    }
+
+    .breadcrumb-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .breadcrumb-item.active {
+      font-weight: 600;
+      opacity: 0.8;
+    }
+
+    .separator {
+      font-size: 18px;
+      opacity: 0.6;
+    }
+
+    mat-icon {
+      font-size: 18px;
+    }

@@ -1,0 +1,336 @@
+{
+  "AROMAS": {
+    "WOODY": {
+      "name": "Woody",
+      "description": "A warm and natural aroma reminiscent of dry wood and bark. It carries a stable, organic character with a slightly rough edge."
+    },
+    "PINE": {
+      "name": "Pine",
+      "description": "Fresh, resinous, and penetrating, similar to a conifer forest. Its balsamic character makes it instantly recognizable."
+    },
+    "CEDAR": {
+      "name": "Cedar",
+      "description": "Aromatic wood with a dry and elegant tone. Offers a clean, slightly spicy profile typical of fine woods."
+    },
+    "SANDALWOOD": {
+      "name": "Sandalwood",
+      "description": "Sweet, creamy, and smooth, with a warm and enveloping character. Evokes refined woods with a soft, perfumed touch."
+    },
+    "RESINOUS": {
+      "name": "Resinous",
+      "description": "A dense, sticky aroma reminiscent of fresh sap. It has a deep, slightly sweet aromatic profile."
+    },
+    "BALSAMIC": {
+      "name": "Balsamic",
+      "description": "Sweet and refreshing, with a soft medicinal nuance. Its aromatic character is stable and gently enveloping."
+    },
+    "OAK": {
+      "name": "Oak",
+      "description": "Toasted wood with a dry and firm profile. Offers a deep, slightly rough aromatic tone."
+    },
+
+    "CITRUS": {
+      "name": "Citrus",
+      "description": "Fresh and sparkling, with notes reminiscent of lemon or orange peel. Its volatile nature makes it easy to identify."
+    },
+    "LEMON": {
+      "name": "Lemon",
+      "description": "Bright and acidic, similar to lemon zest. Presents a lively, fresh profile that stands out quickly."
+    },
+    "ORANGE": {
+      "name": "Orange",
+      "description": "Sweet and juicy, with a soft tone reminiscent of ripe fruit. Warm and pleasant in character."
+    },
+    "GRAPEFRUIT": {
+      "name": "Grapefruit",
+      "description": "A citrus aroma with a fresh, slightly bitter edge. Lively and subtly dry, easy to distinguish."
+    },
+    "LIME": {
+      "name": "Lime",
+      "description": "Green, acidic, and refreshing. Its light, volatile character gives a bright aromatic sensation."
+    },
+    "TANGY": {
+      "name": "Tangy",
+      "description": "A lively, sharp aroma with a characteristic sour sensation. Fresh and energetic in tone."
+    },
+    "SOUR": {
+      "name": "Sour",
+      "description": "Intense and sharp notes reminiscent of unripe fruit. Lively and slightly abrasive."
+    },
+
+    "BERRY": {
+      "name": "Berry",
+      "description": "Sweet and fruity, similar to ripe berries. Juicy and soft, easy to identify."
+    },
+    "GRAPE": {
+      "name": "Grape",
+      "description": "A sweet, fruity aroma reminiscent of purple grapes or must. Rounded and slightly dense."
+    },
+    "APPLE": {
+      "name": "Apple",
+      "description": "Fresh and crisp, similar to green apple. Clean and lightly acidic."
+    },
+    "PEACH": {
+      "name": "Peach",
+      "description": "Sweet and juicy, with a soft fruity tone. Warm and pleasant in character."
+    },
+    "APRICOT": {
+      "name": "Apricot",
+      "description": "Sweet and fleshy fruit with a mild honeyed nuance. Soft and lightly perfumed."
+    },
+    "PLUM": {
+      "name": "Plum",
+      "description": "Deep sweetness with a slightly acidic edge. Fruity and mature in profile."
+    },
+    "LYCHEE": {
+      "name": "Lychee",
+      "description": "Sweet, floral, and exotic, with a juicy character. Soft and highly recognizable."
+    },
+    "FRUITY": {
+      "name": "Fruity",
+      "description": "A sweet, fresh blend of ripe fruits. Lively and pleasant aromatic character."
+    },
+
+    "SWEET": {
+      "name": "Sweet",
+      "description": "A soft, sugary aroma with a light and pleasant tone. Warm and gentle in sensation."
+    },
+    "HONEY": {
+      "name": "Honey",
+      "description": "Warm, thick sweetness reminiscent of natural honey. Smooth and enveloping."
+    },
+    "SUGAR": {
+      "name": "Sugar",
+      "description": "Simple, direct sweetness similar to white sugar. Light and clean aroma."
+    },
+    "CANDY": {
+      "name": "Candy",
+      "description": "Intense sweetness reminiscent of confectionery. Bright, youthful aromatic profile."
+    },
+    "AMBER": {
+      "name": "Amber",
+      "description": "Sweet, warm, and resinous with a deep tone. Soft and lightly perfumed aroma."
+    },
+
+    "FLORAL": {
+      "name": "Floral",
+      "description": "Soft and perfumed, similar to fresh flowers. Delicate and slightly sweet character."
+    },
+    "ROSE": {
+      "name": "Rose",
+      "description": "Sweet and elegant, reminiscent of fresh petals. Smooth and perfumed aroma."
+    },
+    "LAVENDER": {
+      "name": "Lavender",
+      "description": "Herbal and floral with a calming nuance. Soft and balanced aromatic profile."
+    },
+    "LILAC": {
+      "name": "Lilac",
+      "description": "Sweet and gentle, with a light floral tone. Evokes delicate, perfumed blossoms."
+    },
+    "JASMINE": {
+      "name": "Jasmine",
+      "description": "Intense, sweet, and exotic floral aroma. Deep and highly characteristic."
+    },
+    "VIOLET": {
+      "name": "Violet",
+      "description": "Sweet and powdery with a delicate floral nuance. Soft and elegant character."
+    },
+
+    "HERBAL": {
+      "name": "Herbal",
+      "description": "Green and aromatic, like a blend of fresh herbs. Clean and natural profile."
+    },
+    "GRASSY": {
+      "name": "Grassy",
+      "description": "Green and lively, similar to freshly cut grass. Light and bright character."
+    },
+    "GREEN": {
+      "name": "Green",
+      "description": "Fresh and vegetal, reminiscent of crushed leaves. Natural and soft aromatic tone."
+    },
+    "TEA": {
+      "name": "Tea",
+      "description": "Soft and herbal, similar to light infusions. Delicate and balanced aroma."
+    },
+    "HAY": {
+      "name": "Hay",
+      "description": "Dry and vegetal, reminiscent of cured grasses. Soft and slightly warm profile."
+    },
+    "EUCALYPTUS": {
+      "name": "Eucalyptus",
+      "description": "Fresh and minty with a balsamic nuance. Clean and penetrating aroma."
+    },
+
+    "MINTY": {
+      "name": "Minty",
+      "description": "Fresh and penetrating, with a cool sensation. Lively and stimulating aromatic character."
+    },
+    "MENTHOL": {
+      "name": "Menthol",
+      "description": "Very fresh and volatile, with an intense tone. Clean and instantly recognizable aroma."
+    },
+    "SPEARMINT": {
+      "name": "Spearmint",
+      "description": "Sweet and refreshing, softer than mint. Light and pleasant aromatic profile."
+    },
+
+    "SPICY": {
+      "name": "Spicy",
+      "description": "Warm and aromatic, reminiscent of mild spices. Lively and slightly sharp character."
+    },
+    "PEPPERY": {
+      "name": "Peppery",
+      "description": "Dry and sharp, similar to black pepper. Strong and penetrating aroma."
+    },
+    "CLOVES": {
+      "name": "Cloves",
+      "description": "Sweet and spicy with a warm nuance. Deep and aromatic profile."
+    },
+    "CINNAMON": {
+      "name": "Cinnamon",
+      "description": "Sweet and warm, highly aromatic. Smooth and enveloping character."
+    },
+    "GINGER": {
+      "name": "Ginger",
+      "description": "Sharp and fresh with a lightly citrus edge. Lively and stimulating aroma."
+    },
+    "ANISE": {
+      "name": "Anise",
+      "description": "Sweet and herbal, reminiscent of licorice. Soft and perfumed profile."
+    },
+
+    "PUNGENT": {
+      "name": "Pungent",
+      "description": "Strong and penetrating aroma with a sharp character. Intense and direct profile."
+    },
+    "SHARP": {
+      "name": "Sharp",
+      "description": "Agile and vivid, perceived quickly. Clear and direct aromatic tone."
+    },
+    "ACRID": {
+      "name": "Acrid",
+      "description": "Dry and harsh, with an irritating edge. Strong and marked aromatic profile."
+    },
+
+    "EARTHY": {
+      "name": "Earthy",
+      "description": "Deep and organic aroma reminiscent of dry soil and minerals. Stable and natural character."
+    },
+    "MUSKY": {
+      "name": "Musky",
+      "description": "Deep and slightly animalic with a soft sweetness. Dense and enveloping aroma."
+    },
+    "MUSTY": {
+      "name": "Musty",
+      "description": "Muted and stale, similar to stored materials. Dense, low‑volatility aromatic character."
+    },
+    "MOSSY": {
+      "name": "Mossy",
+      "description": "Green and soft, like vegetation on stone. Natural and slightly muted profile."
+    },
+    "PATCHOULI": {
+      "name": "Patchouli",
+      "description": "Earthy and sweet with a deep herbal nuance. Warm and enveloping aroma."
+    },
+    "TOBACCO": {
+      "name": "Tobacco",
+      "description": "Dry and warm, reminiscent of cured leaves. Firm and characteristic aromatic tone."
+    },
+    "LEATHER": {
+      "name": "Leather",
+      "description": "Strong and warm, similar to natural leather. Deep and slightly rough aroma."
+    },
+
+    "FUEL": {
+      "name": "Fuel",
+      "description": "Chemical and penetrating, similar to light vapors. Volatile and marked profile."
+    },
+    "GAS": {
+      "name": "Gas",
+      "description": "Dry, sharp chemical aroma. Strong and volatile character."
+    },
+    "DIESEL": {
+      "name": "Diesel",
+      "description": "Intense fuel-like aroma with a dry edge. Strong and recognizable profile."
+    },
+    "KEROSENE": {
+      "name": "Kerosene",
+      "description": "Sharp and chemical, similar to clean fuel. Penetrating and volatile aroma."
+    },
+    "CHEMICAL": {
+      "name": "Chemical",
+      "description": "Synthetic and strong, with a dry tone. Volatile and direct aromatic profile."
+    },
+    "SOLVENT": {
+      "name": "Solvent",
+      "description": "Strong, volatile aroma reminiscent of cleaning agents. Penetrating and marked character."
+    },
+
+    "CHEESY": {
+      "name": "Cheesy",
+      "description": "Fermented and creamy with an intense tone. Strong and slightly salty aroma."
+    },
+    "SKUNK": {
+      "name": "Skunk",
+      "description": "Highly penetrating with an animalic and herbal character. Strong and distinctive profile."
+    },
+    "SULFUROUS": {
+      "name": "Sulfurous",
+      "description": "Harsh and strong, reminiscent of sulfur compounds. Intense and marked aroma."
+    },
+    "FUNKY": {
+      "name": "Funky",
+      "description": "Intense and unconventional, with fermented nuances and a soft animalic touch. Complex and distinctive profile."
+    },
+    "STINKY": {
+      "name": "Stinky",
+      "description": "Strong and unpleasant, with a highly penetrating character. Aggressive aromatic profile."
+    },
+    "ROTTEN": {
+      "name": "Rotten",
+      "description": "Aroma reminiscent of overly aged fruit or degraded material. Strong and easily recognizable."
+    },
+    "SWEATY": {
+      "name": "Sweaty",
+      "description": "Animalic and salty, similar to dried sweat. Intense and marked aromatic tone."
+    },
+
+    "MEDICINAL": {
+      "name": "Medicinal",
+      "description": "Clean, chemical aroma reminiscent of mild ointments. Fresh and penetrating character."
+    },
+    "CAMPHOR": {
+      "name": "Camphor",
+      "description": "Fresh and penetrating with a balsamic nuance. Strong and volatile aroma."
+    },
+    "WAXY": {
+      "name": "Waxy",
+      "description": "Soft and neutral, similar to wax or paraffin. Light and stable aromatic profile."
+    },
+    "OILY": {
+      "name": "Oily",
+      "description": "Greasy and dense, with a heavy sensation. Smooth and persistent aroma."
+    },
+    "MUSTARD": {
+      "name": "Mustard",
+      "description": "Sharp and sulfurous, reminiscent of strong mustard. Penetrating and vivid aromatic character."
+    }
+  },
+  "AROMA_CATEGORIES" : {
+    "Woody": "Woody",
+    "Citrus": "Citrus",
+    "Fruit": "Fruit",
+    "Sweet": "Sweet",
+    "Floral": "Floral",
+    "Herbal": "Herbal",
+    "Spicy": "Spicy",
+    "Cheesy": "Cheesy",
+    "Chemical": "Chemical",
+    "Gas": "Gas",
+    "Earthy": "Earthy"
+  },
+  "COMMON" : {
+    "NONE": "None"
+  }
+}

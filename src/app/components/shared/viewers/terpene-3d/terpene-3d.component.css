@@ -1,0 +1,33 @@
+.viewer-wrapper {
+  width: 100%;
+  overflow: hidden;
+  /* Asegura que el contenedor padre no tenga fondo */
+  background: transparent !important;
+}
+
+.mol-container {
+  width: 100%;
+  height: 450px;
+  position: relative;
+  cursor: grab;
+  background: transparent !important;
+}
+
+/* IMPORTANTE: Fuerza al canvas generado a ser transparente */
+.mol-container canvas {
+  background-color: transparent !important;
+  position: absolute; /* Asegura que no desplace nada */
+  top: 0;
+  left: 0;
+}
+
+.mol-container:active {
+  cursor: grabbing;
+}
+
+.molecular-formula, .smiles, .scientific-name {
+  display: block;
+  text-align: center;
+  margin-top: 8px;
+  color: #555;
+}

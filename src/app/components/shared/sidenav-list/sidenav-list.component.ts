@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { ThemeOptions } from '../../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../../model/enums/theme-options.enum';
 
 @Component({
   selector: 'app-sidenav-list',

@@ -16,6 +16,10 @@
       <mat-icon matListItemIcon>calendar_today</mat-icon>
       <span matListItemTitle>Calendario</span>
     </a>
+    <a mat-list-item routerLink="/dashboard/data" routerLinkActive="active">
+      <mat-icon matListItemIcon>dictionary</mat-icon>
+      <span matListItemTitle>Data</span>
+    </a>
   </mat-nav-list>
 }
 @if(type === 'b2b'){
@@ -40,17 +44,9 @@
 }
 @if(type === 'bo'){
   <mat-nav-list>
-    <a mat-list-item routerLink="/bo/users" routerLinkActive="active">
-      <mat-icon matListItemIcon>manage_accounts</mat-icon>
-      <span matListItemTitle>Usuarios</span>
-    </a>
-    <a mat-list-item routerLink="/bo/settings" routerLinkActive="active">
-      <mat-icon matListItemIcon>settings</mat-icon>
-      <span matListItemTitle>Configuración</span>
-    </a>
-    <a mat-list-item routerLink="/bo/logs" routerLinkActive="active">
-      <mat-icon matListItemIcon>receipt_long</mat-icon>
-      <span matListItemTitle>Registros</span>
+    <a mat-list-item routerLink="/bo/dashboard/admin/roles" routerLinkActive="active">
+      <mat-icon matListItemIcon>domino_mask</mat-icon>
+      <span matListItemTitle>Gestión de Roles</span>
     </a>
   </mat-nav-list>
 }

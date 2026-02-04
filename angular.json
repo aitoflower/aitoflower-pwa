@@ -54,6 +54,9 @@
             ],
             "styles": [
               "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/3dmol/build/3Dmol-min.js"
             ]
           },
           "configurations": {

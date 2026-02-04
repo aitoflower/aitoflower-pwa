@@ -1,0 +1,18 @@
+mat-chip {
+  margin: 4px;
+
+  .aroma-icon {
+    vertical-align: middle;
+    font-size: 18px;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    color: inherit;
+  }
+
+  .aroma-label {
+    vertical-align: middle;
+    font-size: 12px;
+    color: inherit;
+  }
+}

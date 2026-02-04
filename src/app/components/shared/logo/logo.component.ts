@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
-import { ThemeOptions } from '../../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../../model/enums/theme-options.enum';
 
 @Component({
   selector: 'app-logo',

@@ -41,3 +41,10 @@
 mat-divider {
   margin: 10px 0;
 }
+
+.role-chip {
+  .mat-mdc-chip-action-label {
+    font-size: smaller !important;
+  }
+  margin: 2px;
+}

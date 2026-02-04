@@ -7,7 +7,7 @@ import { animate, style, transition, trigger } from '@angular/animations';
 import { NavigatorComponent } from "../../components/shared/navigator/navigator.component";
 import { FooterComponent } from "../../components/shared/footer/footer.component";
 import { Title } from '@angular/platform-browser';
-import { ThemeOptions } from '../../interfaces/theme-options.enum';
+import { ThemeOptions } from '../../model/enums/theme-options.enum';
 import { SidenavService } from '../../services/sidenav.service';
 import { ThemeService } from '../../services/theme.service';
 import { NewsletterComponent } from '../../components/core/newsletter/newsletter.component';
